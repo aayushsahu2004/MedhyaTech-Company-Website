@@ -1,0 +1,972 @@
+@media (max-width:700px) {
+
+    /* Top Screen OR Loader page responsive code */
+    #top-screen{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #center{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #name h1{
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    #name p{
+        font-size: 5vw;
+    }
+    #text{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #text h1{
+        font-size: 20vw;
+    }
+
+    #top{
+        position: absolute;
+    }
+    #second-top{
+        position: absolute;
+    }
+    #bottom{
+        position: absolute;
+    }
+    #second-bottom{
+        position: absolute;
+    }
+
+    #page1{
+        min-height: 80vh;
+    }
+    .container{
+        height: 100%;
+    }
+    /* Nav-Bar 1 Responsive code */
+    #page1 #nav1{
+        width: 100%;
+        height: 13vw;
+        background-color: #1B1F2E;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0vw 4vw;
+    }
+
+    #nav1 #logo{
+        display: none;
+    }
+
+    #nav-part2{
+        width: 100%;
+    }
+
+    .head-text{
+        width: 40vw;
+        height: 9vw;
+    }
+
+    .head-text:nth-child(1){
+        justify-content: start;
+        width: 22vw;
+    }
+
+    .head-text:nth-child(2){
+        width: 24vw;
+    }
+
+    .head-text:nth-child(3){
+        width: 24vw;
+    }
+
+    .head-text:nth-last-child(1){
+        width: 25vw;
+    }
+    .head-text .main-icon{
+        width: 3vw;
+        margin-bottom: 2.8vw;
+    }
+
+    .text-heading h2{
+        font-size: 2.4vw;
+    }
+
+    .text-heading p{
+        font-size: 1.8vw;
+    }
+
+    .head-text:nth-last-child(1) .text-heading{
+        margin-top: 2.1vw;
+    }
+
+    .icons img{
+        width: 3.2vw;
+    }
+
+    /* #nav3{
+        display: none;
+    } */
+
+    /* Nav-Bar 2 Responsive Code  */
+    .navs{
+        width: 100%;
+        height: 12vw;
+        background-color: #0B0616;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vw 4vw;
+    }
+
+    .navs a{
+        display: none;
+    }
+
+    .navs h1{
+        display: initial;
+    }
+
+    .menu-logo{
+        display: initial;
+        /* background-color: red; */
+    }
+
+    .menu-logo img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-icon{
+        display: initial;
+        width: 10vw;
+    }
+
+    .container{
+        width: 100%;
+        height: calc(100vh - 25vw);
+        position: relative;
+    }
+
+    /* Page1 Text Responsive Code */
+    .text{
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .text h1{
+        color: white;
+        font-family: boldd;
+        font-style: normal;
+        font-size: 5vw;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin-bottom: 2vw;
+    }
+
+    .text p{
+        width: 80%;
+        font-size: 2.8vw;
+        font-weight: 400;
+        line-height: 5vw;
+        letter-spacing: 0.8px;
+        margin-bottom: 6vw;
+        margin-left: 10vw;
+    }
+
+    .text button{
+        font-size: 2.5vw;
+    }
+
+    #abc{
+        display: none;
+    }
+    
+    /* Hidden Menu Responsive Code */
+    #menu{
+        width: 100%;
+        height: 100vh;
+        display: none;
+        background-color: #0B0616;
+    }
+
+    /* Each Page Heading Responsive Code  */
+    .heading{
+        width: 40vw; 
+        height: 8vw;
+    }
+    .heading h4{
+        font-size: 3vw;
+        letter-spacing: 0.4vw;
+    }
+
+    .separator .dot{
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50%;
+    }
+
+    .separator .line{
+        width: 12vw;
+        height: 0.35vw;
+    }
+    
+    /* Page2 About Us Page Responsive Code  */
+    #page2{
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 0vw;
+    }
+
+    #page2-container{
+        flex-direction: column; 
+        margin-top: 4vw;
+        gap: 10vw;
+        height: 90%;
+    }
+
+    #page2-left{
+        width: 100%;
+    }
+
+    #page2-left h1{
+        font-size: 5vw;
+        letter-spacing: 0.15vw;
+    }
+
+    #page2-left p{
+        font-size: 3.2vw;
+        line-height: 5vw;
+        letter-spacing: 0.15vw;
+        margin: 3vw 0vw;
+    }
+
+    .page2-text{
+        margin-top: 2vw;
+    }
+
+    .page2-text img{
+        width: 6vw;
+    }
+
+    .page2-text h4{
+        font-size: 3vw;
+        letter-spacing: 0.15vw;
+    }
+
+    #page2-left a button{
+        font-size: 3.5vw;
+        padding: 2vw 3vw;
+        margin-top: 4vw;
+    }
+    
+    #page2-right{
+        width: 100%;
+    }
+
+
+    /* Page3 Colab Page Responsive code */
+    #page3{
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    #page3-overlay{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #page3 #left{
+        width: 100%;
+        height: 45%;
+        gap: 5vw;
+    }
+
+    #page3 #right{
+        width: 100%;
+        height: 40%;
+        align-items: flex-start;
+
+    }
+
+    #right-text h1{
+        font-size: 5vw;
+        letter-spacing: 0.15vw;
+    }
+
+    #right-text p{
+        font-size: 3.2vw;
+        line-height: 5vw;
+        letter-spacing: 0.15vw;
+        margin: 3vw 0vw;
+    }
+
+    #bottom-text{
+        flex-direction: column;
+        gap: 0vw;
+    }
+
+    .bottom-text-head{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .bottom-text-head:nth-last-child(1){
+        margin-top: 5vw;
+    }
+
+    #last-sub-text{
+        margin-top: 1.8vw;
+    }
+
+    .sub-texts{
+        gap: 3vw;
+    }
+
+    .sub-texts img{
+        width: 6vw;
+    }
+
+    .sub-texts h4{
+        font-size: 3vw;
+        letter-spacing: 0.15vw;
+    }
+
+    /* Page4 Services Page Responsive Code  */
+    #page4{
+        width: 100%;
+        height: fit-content;
+    }
+     
+    #services-top{
+        width: 100%;
+        height: 30vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4vw;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+    }
+
+    #services-top h1{
+        font-size: 6vw;
+        letter-spacing: 0.15vw;
+    }
+
+    #services-top a button{
+        font-size: 3vw;
+        padding: 2vw 3vw;
+    }
+
+    #services-top1{
+        margin-top: 12vw;
+        height: 130vw;
+        flex-direction: column;
+        gap: 8vw;
+    }
+
+    #services-top2{
+        height: 130vw;
+        flex-direction: column;
+        gap: 8vw;
+    }
+
+    .services{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .serv-container{
+        width: 45%;
+        border-radius: 1vw;
+    }
+
+    .serv-container .circle{
+        width: 8vw;
+        height: 8vw;
+        top: -7%;
+    }
+    
+    .circle img{
+        width: 4vw;
+    }
+
+    .serv-text h2{
+        font-size: 3.5vw;
+        margin-top: 4vw;
+        margin-bottom: 2vw;
+        letter-spacing: 0.15vw;
+    }
+
+    .serv-text p{
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+
+    /* Page5 Process Page Respomsive code */
+    #page5{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #top-div{
+        width: 60%;
+    }
+
+    #top-div h1{
+        font-size: 6vw;
+        letter-spacing: 0.15vw;
+        margin-top: 4vw;
+    }
+
+    #overlay #process-div{
+        width: 100%;
+        height: 60vh;
+        flex-direction: column;
+    }
+
+    .proc-circle{
+        width: 55vw;
+        height: 55vw;
+    }
+
+    .proc-circle:nth-child(2){
+        margin-top: 0vw;
+    }
+
+    .circle-inside{
+        width: 45vw;
+        height: 45vw;
+    }
+
+    .circle-inside h3{
+        font-size: 5.1vw;
+        letter-spacing: 0.15vw;
+    }
+
+    .circle-inside p{
+        font-size: 3.3vw;
+        letter-spacing: 0.15vw;
+    }
+
+    .small-circle{
+        width: 18vw;
+        height: 18vw;
+        top: -15%;
+        right: 5%;
+    }
+
+    .small-circle h2{
+        font-size: 8vw;
+    }
+
+    /* Page6 Why Choose Us Responsive Code */
+
+    #page6{
+        height: 120vh;
+    }
+
+    #page6-top-container{
+        width: 100%;
+        height: 25%;
+    }
+
+    #page6-top-container h1{
+        font-size: 6vw;
+        letter-spacing: 0.15vw;
+        margin-top: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    #page6-top-container p{
+        font-size: 3.2vw;
+        line-height: 5vw;
+        letter-spacing: 0.15vw;
+    }
+
+    #page6-bottom-container{
+        height: 75%;
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .left-right{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .choose-data{
+        width: 45%;
+        height: 100%;
+        /* box-shadow: 0vw 0vw 0.2vw 0.2vw #e2e2e2; */
+        box-shadow: 20px 20px 60px #00000041,inset -20px -20px 60px #ffffff40;
+        padding: 0vw 1vw;
+        border-radius: 1vw;
+    }
+
+    .heading-text{
+        height: 12vw;
+        gap: 2vw;
+    }
+
+    .heading-text img{
+        width: 6vw;
+    }
+
+    .heading-text h2{
+        font-size: 3.5vw;
+        letter-spacing: 0.15vw;
+    }
+
+    .choose-data p{
+        font-size: 2.5vw;
+        line-height: 3.2vw;
+        letter-spacing: 0.08vw;
+    }
+
+    #bottom-center{
+        width: 100%;
+        height: 40%;
+    }
+
+    /* Our Reviews and Details Responsive Code */
+
+    #details{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .details-item{
+        height: 14vw;
+    }
+
+    .details-item img{
+        width: 6vw;
+    }
+
+    .details-item h2, h3{
+        font-size: 4vw;
+        letter-spacing: 0.15vw;
+    }
+
+    .details-item h2{
+        margin-right: 2vw;
+    }
+
+    .details-item p{
+        font-size: 1.5vw;
+    }
+
+    /* Page7 Our Work And Pojects Responsive Code */
+
+    #page7{
+        width: 100%;
+        height: 80vh;
+    }
+
+    #page7-top-container{
+        width: 100%;
+        height: 42%;
+    }
+
+    #page7-top-container h1{
+        font-size: 6vw;
+        letter-spacing: 0.15vw;
+        margin-top: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    #page7-top-container p{
+        font-size: 3.2vw;
+        line-height: 5vw;
+        letter-spacing: 0.15vw;
+    }
+
+    #page7-bottom-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .page7-project-container{
+        width: 50%;
+        height: 90%;
+        margin-left: 3.5vw;
+        border-radius: 1vw;
+    }
+
+    /* Contact Us Page 8 Responsive Code */
+
+    #page8{
+        width: 100%;
+        height: 80vh;
+    }
+
+    #page8-top-container{
+        width: 100%;
+        height: 65%;
+    }
+
+    #top-text-container{
+        width: 100%;
+    }
+
+    #top-text-container h1{
+        font-size: 6vw;
+        letter-spacing: 0.15vw;
+        margin-top: 10vw;
+        margin-bottom: 4vw;
+    }
+
+    #top-text-container p{
+        font-size: 3.2vw;
+        line-height: 5vw;
+        letter-spacing: 0.15vw;
+    }
+
+    #top-text-container a button{
+        font-size: 3.5vw;
+        padding: 2vw 3vw;
+        margin-top: 4vw;
+    }
+
+    #page8-bottom-container{
+        width: 100%;
+        height: 45%;
+        margin-top: 15vw;
+        padding: 0vw;
+    }
+
+    #contact-container{
+        flex-direction: column;
+    }
+
+    .contact-details{
+        width: 52%;
+    }
+
+    .contact-details .img-icon{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .contact-details .img-icon img{
+        width: 5vw;
+    }
+
+    .contact-details h2{
+        font-size: 5vw;
+        letter-spacing: 0.15vw;
+    }
+
+    .contact-details p{
+        margin-top: 0.8vw;
+        font-size: 3vw;
+        letter-spacing: 0.15vw;
+    }
+
+    /* Page9 Footer Page Responsive Code */
+
+    #page9{
+        height: 200vh;
+        padding-top: 40vw;
+        background-position: center;
+    }
+
+    #page9 #footer{
+        height: 95%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #about-us{
+        width: 70%;
+        margin-bottom: 6vw;
+    }
+
+    #about-us img{
+        width: 50vw;
+    }
+
+    #about-us p{
+        font-size: 3.2vw;
+        line-height: 4vw;
+        letter-spacing: 0.15vw;
+    }
+
+    #about-icons img{
+        width: 6vw;
+        transition: all ease 0.3s;
+    }
+
+    #explore{
+        margin-left: 0vw;
+        width: 100%;
+        margin-bottom: 6vw;
+    }
+
+    .footer-heading{
+        font-size: 8vw;
+        letter-spacing: 0.15vw;
+    }
+
+    .footer-link{
+        font-size: 4.2vw;
+        margin-top: 4vw;
+    }
+
+    #footer-services{
+        width: 100%;
+        margin-bottom: 10vw;
+    }
+
+    #subscribe{
+        width: 70%;
+    }
+
+    #subscribe p{
+        font-size: 3.2vw;
+        line-height: 4vw;
+        letter-spacing: 0.15vw;
+    }
+
+    #subscribe form{
+        margin-top: 5vw;
+        justify-content: flex-start;
+    }
+
+    #email-address{
+        width: 35vw;
+        height: 6vw;
+        font-size: 2.6vw;
+        letter-spacing: 0.15vw;
+        padding-left: 3vw;
+    }
+
+    #email-send-btn{
+        width: 10vw;
+        height: 6vw;
+    }
+
+    #email-send-btn img{
+        width: 5vw;
+    }
+
+    #footer-bottom{
+        height: 5%;
+        margin-top: 0vw;
+    }
+
+    #footer-bottom p{
+        font-size: 2.8vw;
+    }
+}
+
+@media (max-width:540px){
+
+    #page2{
+        height: 120vh;
+    }
+
+    /* Page 5 Responsive Code */
+    
+    #page5{
+        width: 100%;
+        min-height: 180vh;
+    }
+
+    #overlay{
+        height: 100%;
+    }
+
+    #overlay #process-div{
+        width: 100%;
+        height: 140vh;
+        margin-top: 15vw;
+        flex-direction: column;
+        gap: 10vw;
+    }
+}
+
+@media(min-width: 700px) and (max-width: 1024px){
+
+    #top-screen{
+        width: 100%;
+        height: fit-content;
+        padding: 15vw 0vw;
+    }
+
+    /* Page1 Home Page Responsive Code */
+
+    #page1{
+        min-height: calc(100vh - 85vw);
+    }
+
+    #page1 #nav1{
+        padding: 0vw 1vw;
+    }
+
+    #logo{
+        width: 20vw;
+        height: 8vw;
+    }
+
+    .container{
+        height: 100%;
+    }
+
+    /* Page2 About Us Page Responsive Code  */
+
+    #page2{
+        height: fit-content;
+        padding: 5vw 3vw;
+    }
+
+    #page2-container{
+        height: 100%;
+        margin-top: 3.5vw;
+    }
+
+    .page2-text{
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+    }
+
+    #page2-right{
+        margin-top: 5.5vw;
+    }
+
+    /* Page3 Collab Page Responsive Code */
+
+    #page3{
+        height: fit-content;
+    }
+
+    #page3-overlay{
+        height: 100%;
+        padding: 5vw 3vw;
+    }
+
+    #right-text p{
+        margin-top: 2vw;
+    }
+
+    .sub-texts{
+        margin-top: 2vw;
+    }
+
+    /* Page 4 Service Page All Code Start from Here  */
+
+    #page4{
+        height: fit-content;
+        padding: 5vw 0vw;
+    }
+
+    #services-top, #services-top1, #services-top2{
+        padding: 0vw 3vw;
+    }
+
+    /* Page5 Process Page Respomsive code */
+    #page5{
+        height: fit-content;
+    }
+
+    #page5 #overlay{
+        padding: 5vw 3vw;
+        height: fit-content;
+    }
+
+    #overlay #process-div{
+        height: fit-content;
+        margin-top: 5vw;
+    }
+
+    /* Page6 Why Choose Us Responsive Code */
+    #page6{
+        height: fit-content;
+        padding: 5vw 3vw 2vw 3vw;
+    }
+
+    #page6-bottom-container{
+        margin-top: 4vw;
+    }
+
+    .choose-data{
+        margin-bottom: 3vw;
+    }
+
+    /* Details Page About Projects, Experience */
+
+    #details{
+        height: fit-content;
+    }
+
+    .details-overlay{
+        padding: 8vw 3vw;
+    }
+
+    /* Our Work And Projects */
+
+    #page7{
+       height: fit-content;
+       padding: 5vw 3vw;
+    }
+
+    .page7-project-container{
+        width: 18vh;
+        height: 25vh;
+    }
+
+    /* Contact Us Page 8  */
+
+    #page8{
+        height: fit-content;
+        position: relative;
+        padding: 0vw 3vw 16vw 3vw;
+    }
+
+    #page8-bottom-container{
+        width: 94%;
+        position: absolute;
+    }
+
+    /* Page9 Footer Page  */
+
+    #page9{
+        height: 110vh;
+    }
+
+    #page9 #footer{
+        height: fit-content;
+        padding: 0vw 3vw;
+    }
+}
+
+
+@media(min-width: 700px) and (max-width: 912px){
+    #top-screen{
+        width: 100%;
+        height: fit-content;
+        padding: 30vw 0vw;
+    }
+}

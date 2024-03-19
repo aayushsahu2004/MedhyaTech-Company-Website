@@ -1,0 +1,894 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    width: 100%;
+    height: 100%;
+    padding: 0.1px;
+}
+
+#nav {
+    width: 100%;
+    height: 65px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#nav h1 {
+    font-family: monument;
+    letter-spacing: -2px;
+    position: relative;
+}
+
+#nav h1 sup {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav h1::after {
+    font-family: gilroy;
+    content: "model mangement";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #777;
+    position: absolute;
+    bottom: -5px;
+    right: 25px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: black;
+    border-right: 2px solid black;
+    padding: 22px 100px;
+}
+
+#nav i {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px;
+}
+
+#center {
+    width: 100%;
+    height: calc(100% - 95px);
+    position: relative;
+    padding: 20px 40px 0px 40px;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#content video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+#ele1 {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    top: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 35px;
+}
+
+#ele1 h1 {
+    font-family: monument;
+    font-size: 40px;
+    line-height: 45px;
+    color: white;
+}
+
+#circle {
+    width: 60px;
+    height: 60px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle h2 {
+    font-size: 20px;
+    color: white;
+}
+
+#ele2 {
+    width: 94%;
+    height: 50px;
+    position: relative;
+    top: 68%;
+    left: 3%;
+    border-top: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#ele2 h1 {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+#ele2 img {
+    width: 40px;
+}
+
+#scroller {
+    width: 100%;
+    height: 36%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller:hover #container{
+    animation-play-state: paused;
+}
+
+.elem{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 29px;
+    cursor: pointer;
+}
+
+.elem h6{
+    font-size: 15px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.elem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@keyframes anime{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* Page2 */
+
+#page2{
+    width: 100%;
+    height: 100%;
+}
+
+#alphabet{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 40px;
+}
+
+#alphabet h5{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#alphabet h6{
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    border: 1px solid white;
+    padding: 4px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#alphabet h6:hover{
+    border: 1px solid black;
+}
+
+#page2-content{
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    padding: 40px;
+}
+
+#page2-left{
+    width: 60%;
+    height: 100%;
+    margin-right: 25px;
+}
+
+#page2-left img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+#page2-left h1{
+    margin-top: 15px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: monument;
+}
+
+#page2-right{
+    width: 40%;
+    height: 100%;
+}
+
+#page2-top{
+    width: 100%;
+    height: 60%;
+    padding: 0px 0px 20px 0px;
+}
+
+#page2-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+#page2-bottom{
+    width: 100%;
+    height: 45%;
+    display: flex;
+}
+
+#right-text1{
+    width: 45%;
+    height: 100%;
+    margin-right: 25px;
+}
+
+#right-text1 h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#right-text2{
+    width: 55%;
+    height: 100%;
+}
+
+#right-text2 h6{
+    font-size: 15.5px;
+    font-weight: 500;
+}
+
+/* Page 3 */
+
+#page3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#page3-part1{
+    width: 35%;
+    height: 100%;
+    position: relative;
+    padding: 40px;
+}
+
+#page3-part1 #rotate{
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(360deg);
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#page3-part1 #rotate:hover{
+    animation-play-state: paused;
+}
+
+@keyframes rotate{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100%{
+            transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+#page3-part1 #arrow{
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 9;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%)
+}
+
+#page3-part1 p{
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    top: 80%;
+}
+
+#page3-part2{
+    width: 65%;
+    height: 100%;
+    padding: 40px;
+}
+
+#page3-part2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Page 4 */
+#page4{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    position: relative;
+}
+
+#page4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page4 h6{
+    font-size: 15px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 4px 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12%;
+    right: 6%;
+}
+
+/* Page 5 */
+
+#page5{
+    width: 100%;
+    height: 100%;
+}
+
+#page5 h1{
+    font-size: 35px;
+    font-family: monument;
+    text-transform: uppercase;
+    padding: 50px;
+    text-align: center;
+}
+
+#page5 .box{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    padding: 0px 50px;
+    position: relative;
+}
+
+.box:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+
+.box h3{
+    width: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.box img{
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 12%;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.box:hover img{
+    opacity: 1;
+    left: 35%;
+}
+
+.box-part1{
+    width: 30%;
+    margin-right: 80px;
+}
+
+.box-part1 h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.box-part1 h5{
+    text-transform: uppercase;
+    color: #3e3e3e;
+    font-weight: 500;
+}
+
+/* Page6 */
+
+#page6{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 40px;
+}
+
+#page6-left{
+    width: 60%;
+    height: 100%;
+    margin-right: 25px;
+}
+
+#page6-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page6-right{
+    width: 40%;
+    height: 100%;
+}
+
+#right-top{
+    width: 100%;
+    height: 45%;
+}
+
+#right-top h1{
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#right-top h2{
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 25px;
+}
+
+#right-top p{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#right-bottom{
+    width: 100%;
+    height: 55%;
+    display: flex;
+}
+
+#bottom-left{
+    width: 55%;
+    height: 100%;
+    background-color: blue;
+}
+
+#bottom-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+#bottom-right{
+    margin-left: 25px;
+    width: 45%;
+    height: 100%;
+    background-color: springgreen;
+}
+
+#bottom-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Page7 */
+#page7{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    position: relative;
+}
+
+#page7 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 45%;
+}
+
+#page7 h6{
+    font-size: 15px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 4px 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12%;
+    right: 6%;
+}
+
+/* Page8 */
+#page8{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 40px;
+}
+
+#page8-left{
+    width: 60%;
+    height: 100%;
+    margin-right: 25px;
+}
+
+#page8-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page8-right{
+    width: 40%;
+    height: 100%;
+}
+
+#page8-top{
+    width: 100%;
+    height: 65%;
+    padding: 0px 0px 22px 0px;
+}
+
+#page8-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+
+#page8-bottom{
+    width: 100%;
+    height: 35%;
+    display: flex;
+}
+
+#text1{
+    width: 45%;
+    height: 100%;
+    margin-right: 25px;
+}
+
+#text1 h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#text2{
+    width: 55%;
+    height: 100%;
+}
+
+#text2 h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Page9 */
+
+#page9{
+    width: 100%;
+    height: 100%;
+}
+
+#moving{
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: white;
+}
+
+#moving::-webkit-scrollbar{
+    display: none;
+}
+
+#moving h1{
+    font-family: monument;
+    font-size: 35px;
+    font-weight: 550;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 25px;
+    letter-spacing: 2px;
+    padding: 12px 0px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes  move{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 29px));
+    }
+}
+
+#subpage9{
+    width: 100%;
+    height: calc(100% - 70px);
+    padding: 50px 40px;
+    display: flex;
+}
+
+#subpage9-part1{
+    width: 20%;
+    height: 100%;
+    margin-right: 25px;
+}
+
+#subpage9-part1 h1{
+    text-transform: uppercase;
+    font-family: monument;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#subpage9-part2{
+    width: 40%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+#subpage9-part3{
+    width: 40%;
+    height: 100%;
+}
+
+.top{
+    width: 100%;
+    height: 35%;
+}
+
+.top h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.top h2::before{
+    content: "B";
+    font-size: 22px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 1px 10px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.bottom{
+    width: 100%;
+    height: 65%;
+}
+
+.bottom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+/* Page10 */
+
+#page10{
+    width: 100%;
+    height: 50%;
+    padding: 45px 0px 30px 0px;
+}
+
+#footer{
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+}
+
+#footer-part1{
+    height: 100%;
+    width: 40%;
+    border-right: 2px solid black;
+    position: relative;
+}
+
+#footer-part1 h1{
+    font-family: monument;
+    letter-spacing: -2px;
+    position: relative;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+#footer-part1 h1::after{
+    font-family: gilroy;
+    content: "model mangement";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #777;
+    position: absolute;
+    bottom: -5px;
+    left: 55px;
+}
+
+#footer-part1 h6{
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+#footer-part2{
+    height: 100%;
+    width: 20%;
+    border-right: 2px solid black;
+}
+
+#footer-part2 h6{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 22px;
+}
+
+#footer-part3{
+    height: 100%;
+    width: 40%;
+}
+
+#footer-part3-top{
+    width: 100%;
+    height: 30%;
+    border-bottom: 2px solid black;
+    padding: 0.1px;
+}
+
+#footer-part3-top h6{
+    font-size: 16px;
+    font-weight: 500;
+    /* text-align: center; */
+    margin-top: 22px;
+    margin-left: 50px;
+}
+
+#footer-part3-bottom{
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+#bottom-icon{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 12%;
+    left: 4%;
+}
+
+#bottom-icon i{
+    font-size: 18px;
+}
+
+#bottom-text{
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 40%;
+    left: 50px;
+}
+
+#bottom-text h1{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#bottom-text h2{
+    font-size: 12px;
+    font-weight: 500;
+}

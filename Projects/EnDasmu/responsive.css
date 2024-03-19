@@ -1,0 +1,362 @@
+@media (max-width: 600px){
+
+    /* Page1 */
+    #page1{
+        padding: 0px 20px;
+    }
+    #nav #part1{
+        display: none;
+    }
+
+    #nav i{
+        display: block;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    #page1-parts{
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    #page1-part1 {
+        width: 100%;
+        height: 70vh;
+    }
+
+    #page1-part1 h1{
+        font-size: 50px;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    #page1-part1 p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    #page1-part1 #button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page1-part2{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page1-part2 img{
+        width: 200px;
+    }
+    #page1 #bottom{
+        width: 100%;
+        height: 120px;
+        background-color: rgba(255, 255, 255, 0.123);
+        backdrop-filter: blur(5px);
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+        margin-top: 40px;
+    }
+
+    #bottom #bottom-part1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    #bottom #bottom-part1 h2{
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        position: relative;
+    }
+    #bottom #bottom-part1 h2:nth-child(1)::after{
+        content: "Artwork";
+        font-size: 7px;
+        font-weight: 400;
+        position: absolute;
+        top: -40%;
+        left: 0;
+    }
+    
+    #bottom #bottom-part1 h2:nth-child(2)::after{
+        content: "Auction";
+        font-size: 7px;
+        font-weight: 400;
+        position: absolute;
+        top: -40%;
+        left: 0;
+    }
+    
+    #bottom #bottom-part1 h2:nth-child(3)::after{
+        content: "Artist";
+        font-size: 7px;
+        font-weight: 400;
+        position: absolute;
+        top: -40%;
+        left: 0;
+    }
+
+    #bottom #bottom-part2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px;
+    }
+    
+    #bottom-part2 #images{
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    #bottom-part2 #images::after{
+        content: "Art";
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        position: absolute;
+        top: -65%;
+        left: 0;   
+    }
+    
+    #bottom-part2 #images::before{
+        content: "3.4 ETH";
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        position: absolute;
+        top: -70%;
+        left: 16%;   
+    }
+    
+    #images .img{
+        width: 100px;
+        height: 80%;
+        border-radius: 50%;
+    }
+    
+    #images .img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Page2 */
+    #page2{
+        height: 120vh;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #page2-part1{
+        width: 100%;
+        height: 90vh;
+    }
+
+    #part1-top{
+        width: 100%;
+        height: 50%;
+    }
+
+    #top-first{
+        width: 50%;
+        height: 20vh;
+    }
+
+    #top-second{
+        width: 50%;
+        height: 20vh;
+    }
+
+    #part1-bottom{
+        width: 100%;
+        height: 50%;
+    }
+
+    #bottom-first{
+        width: 50%;
+        height: 20vh;
+    }
+
+    #bottom-second{
+        width: 50%;
+        height: 20vh;
+    }
+
+    #page2-part2{
+        padding: 0;
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+    }
+    #page2-part2 h3{
+        margin-bottom: 10px;
+    }
+
+    #page2-part2 h1{
+        margin-bottom: 10px;
+    }
+
+    #page2-part2 p{
+        margin-bottom: 10px;
+    }
+
+    #page2-part2 h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Page3 */
+    #page3{
+        height: 80vh;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page3-top{
+        width: 100%;
+        height: 65vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    #top-part1{
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+    }
+
+    #top-part1 h3{
+        margin-bottom: 5px;
+    }
+
+    #top-part1 h1{
+        margin-bottom: 5px;
+    }
+
+    #top-part2{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+
+    #top-part2 .part2-img{
+        border-radius: 15px;
+    }
+
+    .top{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .top .img{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -15%;
+    }
+
+    .top h1{
+        height: 10%;
+        font-size: 20px;
+    }
+
+    .top h2{
+        font-size: 15px;
+    }
+
+    .top h3{
+        font-size: 8px;
+    }
+
+    .part2-img .bottom{
+        border-radius: 15px;
+    }
+
+    #page3-bottom{
+       width: 100%;
+       height: 15vh;
+    }
+
+    #page3-bottom .elem{
+        width: 33%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    /* Page4 */
+    #page4{
+        width: 100%;
+        height: 133vh;
+        padding: 0px 20px;
+    }
+
+    #page4-top{
+        width: 100%;
+        height: 60vh;
+        text-align: center;
+    }
+
+    #page4-top h1{
+        font-size: 50px;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    #page4-bottom{
+        padding: 0;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    #first{
+        width: 100%;
+    }
+
+    #first #icons{
+        margin-bottom: 10px;
+    }
+
+    .sub{
+        margin-bottom: 10px;
+    }
+    
+    .main{
+        font-size: 13px;
+    }
+
+    
+}
