@@ -6,12 +6,22 @@ function HiddenNavBarInitial(){
   document.querySelector("#nav3").style.opacity = "1"
 }
 
+function body(){
+  document.getElementById('body').style.overflowY = 'hidden'
+}
+
+
+function body1(){
+  document.getElementById('body').style.overflowY = 'auto'
+}
+
 function topscreen(){
     var tl = gsap.timeline()
 tl  
 
     .add(function(){
       HiddenNavBarNone();
+      body();
     })
     .from("#name h1",{
         opacity:0,
@@ -97,6 +107,7 @@ tl
 
     .add(function(){
       HiddenNavBarInitial();
+      body1();
     })
 }
 topscreen()
@@ -178,16 +189,17 @@ function HiddenNavBar(){
 }
 HiddenNavBar()
 
+
 function MenuAndBack(){
   document.querySelector("#menu-click").addEventListener("click", function(){
-    var menu = document.querySelector("#menu")
+    var menu = document.querySelector(".menu")
     menu.style.display = "initial"
     menu.style.transform = "translateX(0%)"
     document.querySelector("#main").style.display = "none"
   })
   
-  document.querySelector("#back-icon").addEventListener("click", function(){
-    var menu = document.querySelector("#menu")
+  document.querySelector(".back-icon").addEventListener("click", function(){
+    var menu = document.querySelector(".menu")
     menu.style.display = "none"
     menu.style.transform = "translateX(100%)"
     document.querySelector("#main").style.display = "initial"
