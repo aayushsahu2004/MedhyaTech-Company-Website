@@ -201,7 +201,7 @@ if (window.location.pathname == "/about.html") {
 }
 
 if(window.location.pathname == "/index.html"){
-  document.getElementById("#top-screen").style.display = "none";
+  document.getElementById("top-screen").style.display = "none";
 }
 
 // if ((window.location.pathname == "/MinTechBackup/" || window.location.pathname == "/MinTechBackup/index.html")) {
