@@ -1,3 +1,7 @@
+if(window.location.pathname == "/index.html"){
+  document.getElementById("top-screen").style.display = "none"
+}
+
 function HiddenNavBarNone() {
   document.querySelector("#nav3").style.opacity = "0"
 }
@@ -99,28 +103,26 @@ function topscreen() {
         duration: 1.2,
         ease: "Power4.easeOut"
       })
+      .from(".swiper-slide", {
+        opacity: 0
+      })
   }
-
-  tl.from(".swiper-slide", {
-    opacity: 0
+  tl.from("#nav1", {
+    opacity: 0,
+    y: 20
   })
-    .from("#nav1", {
-      opacity: 0,
-      y: 20
-    })
     .from("#nav2", {
       opacity: 0,
       y: 20
+    })
+    .add(function () {
+      HiddenNavBarInitial();
+      body1();
     })
     .from(".text", {
       z: "-100",
       opacity: 0,
       duration: 2
-    })
-
-    .add(function () {
-      HiddenNavBarInitial();
-      body1();
     })
 }
 topscreen()
@@ -162,7 +164,6 @@ if (window.location.pathname == "/" || window.location.pathname == "/index.html"
   locomotive()
 }
 
-
 // Locomotive for about page
 // if (window.location.pathname == "/MinTechBackup/about.html") {
 if (window.location.pathname == "/about.html") {
@@ -198,10 +199,6 @@ if (window.location.pathname == "/about.html") {
 
   }
   locomotive()
-}
-
-if(window.location.pathname == "/index.html"){
-  document.getElementById("top-screen").style.display = "none";
 }
 
 // if ((window.location.pathname == "/MinTechBackup/" || window.location.pathname == "/MinTechBackup/index.html")) {
@@ -256,16 +253,14 @@ HiddenNavBar();
 function MenuAndBack() {
   document.querySelector("#menu-click").addEventListener("click", function () {
     var menu = document.querySelector(".menu")
-    menu.style.display = "initial"
-    menu.style.transform = "translateX(0%)"
-    document.querySelector(".main").style.display = "none"
+    menu.style.left = "0%"
+    document.querySelector('.body').style.overflowY = 'hidden'
   })
 
   document.querySelector(".back-icon").addEventListener("click", function () {
     var menu = document.querySelector(".menu")
-    menu.style.display = "none"
-    menu.style.transform = "translateX(100%)"
-    document.querySelector(".main").style.display = "initial"
+    menu.style.left = "100%"
+    document.querySelector('.body').style.overflowY = 'auto'
   })
 }
 MenuAndBack();

@@ -109,6 +109,8 @@ html {
 .page1{
     width: 100%;
     min-height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -357,10 +359,8 @@ html {
     width: 100%;
     height: 10vh;
     position: absolute;
-    transform: translateX(100%);
+    left: 100%;
     z-index: 99;
-    transition: all 1s ease;
-    display: none;
     background-color: #0B0616;
 }
 
