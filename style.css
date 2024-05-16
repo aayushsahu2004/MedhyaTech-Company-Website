@@ -127,9 +127,11 @@ html {
     padding: 0px 5vw;
 }
 
-#logo{
-    width: 25vw;
-    height: 6vw;
+.logo{
+    width: 15vw;
+    height: 4vw;
+    background-color: blanchedalmond;
+
 }
 
 #logo img{
@@ -194,6 +196,10 @@ html {
     width: 1.8vw;
 }
 
+/* .logo{
+    height: ;
+} */
+
 /* Nav2 and Hidden Nav Code */
 .navs{
     width: 100%;
@@ -204,7 +210,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
+    gap: 5vw;
 }
 
 .menu-logo{
@@ -229,14 +235,11 @@ html {
     font-size: 1.4vw;
     color: white;
     font-family: mediumm;
-    padding: 0.7vw 1.5vw;
-    border-radius: 0.5vw;
     transition: all ease 0.2s;
-    border: 0.2vw solid transparent;
 }
 
 .home1{
-    color: #40C057 !important;
+    border-bottom: 0.2vw solid black;
 }
 
 .navs a:hover{
@@ -310,8 +313,8 @@ html {
 }
 
 .text h1 span{
-    /* color: #ff4d00; */
-    color: #40C057;
+    color: #ff4d00;
+    /* color: #40C057; */
 }
 
 .text p{
