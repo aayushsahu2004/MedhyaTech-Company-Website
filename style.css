@@ -87,16 +87,34 @@ html {
     overflow: hidden;
 }
 
+/* Show Notification */
+.notification {
+    display: none;
+    position: fixed;
+    top: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1vw 3vw;
+    background-color: rgba(209, 209, 209, 0.801);
+    backdrop-filter: blur(5px);
+    color: green;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    font-family: regular;
+    letter-spacing: 0.06vw;
+}
+
 /* Page 1 */
-#page1{
+.page1{
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 
 /* Nav Bar 1 Code */
 
-#page1 #nav1{
+.page1 #nav1{
     width: 100%;
     height: 7vw;
     background-color: #1B1F2E;
@@ -304,6 +322,15 @@ html {
     margin-bottom: 2vw;
 }
 
+.text a{
+    text-decoration: none;
+    color: white;
+    font-family: regular;
+    font-size: 1.3vw;
+    letter-spacing: 0.15vw;
+    margin-bottom: 2vw;
+}
+
 .text button{
     padding: 1.1vw 2.8vw;
     color: white;
@@ -437,27 +464,28 @@ html {
 
 /* Page2 About Us us  */
 
-#page2{
+.page2{
     width: 100%;
     height: 115vh;
     background-image: url(./Images/why-choose-bg.webp);
     padding: 5vw 5vw;
 }
 
-#page2 .heading h4{
+.page2 .heading h4{
     color: black;
 }
 
-#page2-container{
+.page2-container{
     width: 100%;
     height: 80%;
     margin-top: 4vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 4vw;
 }
 
-#page2-left{
+.page2-left{
     width: 55%;
     height: 100%;
 }
@@ -482,7 +510,7 @@ html {
     color: #2c2c2c;
 }
 
-#page2-left a button{
+.page2-left a button{
     padding: 1vw 2.5vw;
     border: none;
     color: white;
@@ -496,19 +524,19 @@ html {
     margin-top: 2vw;
 }
 
-#page2-left a button:hover{
+.page2-left a button:hover{
     background-color: transparent;
     border: 0.1vw solid #ff4d00;
     color: #ff4d00;
 }
 
-#page2-right{
+.page2-right{
     width: 45%;
     height: 100%;
     border-radius: 0.8vw;
 }
 
-#page2-right img{
+.page2-right img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -518,7 +546,7 @@ html {
 
 /* Page 3 Collab page */
 
-#page3{
+.page3{
     width: 100%;
     height: 120vh;
     background-image: url(./Images/colab-bg-img.webp);
@@ -526,7 +554,7 @@ html {
     background-position: center;
 }
 
-#page3-overlay{
+.page3-overlay{
     width: 100%;
     height: 100%;
     background-color: #000000eb;
@@ -1509,6 +1537,7 @@ html {
     border: none;
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
+    cursor: pointer;
 }
 
 .email-send-btn img{
@@ -1529,3 +1558,4 @@ html {
     color: #a9a9a9;
     font-size: 1.2vw;
 }
+

@@ -53,14 +53,23 @@
         position: absolute;
     }
 
-    #page1{
+    .page1{
         min-height: 80vh;
     }
     .container{
         height: 100%;
     }
+
+    /* Show Notification */
+
+    .notification{
+        top: 8vw;
+        padding: 2vw;
+        letter-spacing: 0.05vw;
+    }
+
     /* Nav-Bar 1 Responsive code */
-    #page1 #nav1{
+    .page1 #nav1{
         width: 100%;
         height: 13vw;
         background-color: #1B1F2E;
@@ -108,7 +117,7 @@
         font-size: 2.4vw;
     }
 
-    .text-heading p{
+    .text-heading p {
         font-size: 1.8vw;
     }
 
@@ -185,7 +194,7 @@
         margin-bottom: 2vw;
     }
 
-    .text p{
+    .text p, .text a{
         width: 80%;
         font-size: 2.8vw;
         font-weight: 400;
@@ -193,6 +202,11 @@
         letter-spacing: 0.8px;
         margin-bottom: 6vw;
         margin-left: 10vw;
+    }
+
+    .about-text{
+        margin-left: 5vw !important;
+        text-align: center;
     }
 
     .text button{
@@ -233,29 +247,29 @@
     }
     
     /* Page2 About Us Page Responsive Code  */
-    #page2{
+    .page2{
         width: 100%;
         height: 100vh;
         padding-bottom: 0vw;
     }
 
-    #page2-container{
+    .page2-container{
         flex-direction: column; 
         margin-top: 4vw;
         gap: 10vw;
         height: 90%;
     }
 
-    #page2-left{
+    .page2-left{
         width: 100%;
     }
 
-    #page2-left h1{
+    .main-heading{
         font-size: 5vw;
         letter-spacing: 0.15vw;
     }
 
-    #page2-left p{
+    .paragraph {
         font-size: 3.2vw;
         line-height: 5vw;
         letter-spacing: 0.15vw;
@@ -275,51 +289,38 @@
         letter-spacing: 0.15vw;
     }
 
-    #page2-left a button{
+    .page2-left a button{
         font-size: 3.5vw;
         padding: 2vw 3vw;
         margin-top: 4vw;
     }
     
-    #page2-right{
+    .page2-right{
         width: 100%;
     }
 
 
     /* Page3 Colab Page Responsive code */
-    #page3{
+    .page3{
         width: 100%;
         min-height: 100vh;
     }
 
-    #page3-overlay{
+    .page3-overlay{
         flex-direction: column-reverse;
         justify-content: center;
     }
 
-    #page3 #left{
+    .page3 #left{
         width: 100%;
         height: 45%;
         gap: 5vw;
     }
 
-    #page3 #right{
+    .page3 #right{
         width: 100%;
         height: 40%;
         align-items: flex-start;
-
-    }
-
-    #right-text h1{
-        font-size: 5vw;
-        letter-spacing: 0.15vw;
-    }
-
-    #right-text p{
-        font-size: 3.2vw;
-        line-height: 5vw;
-        letter-spacing: 0.15vw;
-        margin: 3vw 0vw;
     }
 
     #bottom-text{
@@ -762,8 +763,8 @@
     }
 
     .email-address{
-        width: 35vw;
-        height: 6vw;
+        width: 50vw;
+        height: 8vw;
         font-size: 2.6vw;
         letter-spacing: 0.15vw;
         padding-left: 3vw;
@@ -771,7 +772,7 @@
 
     .email-send-btn{
         width: 10vw;
-        height: 6vw;
+        height: 8vw;
     }
 
     .email-send-btn img{
@@ -784,13 +785,57 @@
     }
 
     .footer-bottom p{
-        font-size: 2.8vw;
+        font-size: 2.5vw;
+    }
+
+    /* About Page Responsive Code */
+
+    #page3-heading{
+        top: 3% !important;
+    }
+
+    #about-page3-overlay{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #about-left{
+        width: 100%;
+        margin-top: 20vw;
+    }
+
+    #about-right{
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    #buttondiv{
+        height: 10vw !important;
+    }
+
+    #button1, #button2, #button3{
+        border-bottom: 1.2vw solid #ff4d00;
+        font-size: 2.5vw;
+        letter-spacing: 0.15vw;
+    }
+
+    #mainContainer{
+        height: calc(100% - 14vw) !important;
+    }
+
+    .scroll-container{
+        padding: 4vw 0vw !important;
+        gap: 4vw !important;
+    }
+
+    .container-img{
+        height: 90% !important;
     }
 }
 
 @media (max-width:540px){
 
-    #page2{
+    .page2{
         height: 120vh;
     }
 
@@ -824,11 +869,11 @@
 
     /* Page1 Home Page Responsive Code */
 
-    #page1{
+    .page1{
         min-height: calc(100vh - 85vw);
     }
 
-    #page1 #nav1{
+    .page1 #nav1{
         padding: 0vw 1vw;
     }
 
@@ -843,12 +888,12 @@
 
     /* Page2 About Us Page Responsive Code  */
 
-    #page2{
+    .page2{
         height: fit-content;
         padding: 5vw 3vw;
     }
 
-    #page2-container{
+    .page2-container{
         height: 100%;
         margin-top: 3.5vw;
     }
@@ -858,17 +903,17 @@
         margin-bottom: 1vw;
     }
 
-    #page2-right{
+    .page2-right{
         margin-top: 5.5vw;
     }
 
     /* Page3 Collab Page Responsive Code */
 
-    #page3{
+    .page3{
         height: fit-content;
     }
 
-    #page3-overlay{
+    .page3-overlay{
         height: 100%;
         padding: 5vw 3vw;
     }
