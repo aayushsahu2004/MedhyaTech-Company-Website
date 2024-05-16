@@ -1,4 +1,4 @@
-if(window.location.pathname == "/index.html"){
+if (window.location.pathname == "/index.html") {
   document.getElementById("top-screen").style.display = "none"
 }
 
@@ -251,17 +251,34 @@ HiddenNavBar();
 
 
 function MenuAndBack() {
+  var flag = 0;
   document.querySelector("#menu-click").addEventListener("click", function () {
-    var menu = document.querySelector(".menu")
-    menu.style.left = "0%"
-    document.querySelector('.body').style.overflowY = 'hidden'
+    if (flag == 0) {
+      var menu = document.querySelector(".menu")
+      menu.style.left = "0%"
+      document.querySelector('.body').style.overflowY = 'hidden'
+      flag = 1;
+    } else {
+      var menu = document.querySelector(".menu")
+      menu.style.left = "-100%"
+      document.querySelector('.body').style.overflowY = 'auto'
+      flag = 0;
+    }
+  })
+  document.querySelector(".main").addEventListener("click", function (ev) {
+    if (ev.target.classList.contains("abcd")) {
+      var menu = document.querySelector(".menu")
+      menu.style.left = "-100%"
+      document.querySelector('.body').style.overflowY = 'auto'
+      flag = 0;
+    }
   })
 
-  document.querySelector(".back-icon").addEventListener("click", function () {
-    var menu = document.querySelector(".menu")
-    menu.style.left = "100%"
-    document.querySelector('.body').style.overflowY = 'auto'
-  })
+  // document.querySelector(".main").addEventListener("click", function (ev) {
+  //     var menu = document.querySelector(".menu")
+  //     menu.style.left = "-100%"
+  //     document.querySelector('.body').style.overflowY = 'auto'
+  // })
 }
 MenuAndBack();
 
