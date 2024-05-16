@@ -23,7 +23,7 @@ function topscreen() {
       HiddenNavBarNone();
       body();
     })
-  if (window.location.pathname == "/" || window.location.pathname == "/index.html") {
+  if (window.location.pathname == "/") {
     tl.from("#name h1", {
       opacity: 0,
       y: 100
