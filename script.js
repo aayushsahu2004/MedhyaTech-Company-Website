@@ -129,40 +129,92 @@ topscreen()
 
 // Locomotive for index page
 // if (window.location.pathname == "/MinTechBackup/" || window.location.pathname == "/MinTechBackup/index.html") {
-if (window.location.pathname == "/" || window.location.pathname == "/index.html") {
+// if (window.location.pathname == "/" || window.location.pathname == "/index.html") {
+//   function locomotive() {
+//     gsap.registerPlugin(ScrollTrigger);
+
+//     // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
+//     const locoScroll = new LocomotiveScroll({
+//       el: document.querySelector("#index-main"),
+//       smooth: true,
+//       smartphone: {
+//         smooth: true,
+//       },
+//       tablet: {
+//         smooth: true,
+//       }
+//     });
+//     // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+//     locoScroll.on("scroll", ScrollTrigger.update);
+
+//     // tell ScrollTrigger to use these proxy methods for the "#index-main" element since Locomotive Scroll is hijacking things
+//     ScrollTrigger.scrollerProxy("#index-main", {
+//       scrollTop(value) {
+//         return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+//       }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+//       getBoundingClientRect() {
+//         return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+//       },
+//       // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+//       pinType: document.querySelector("#index-main").style.transform ? "transform" : "fixed"
+//     });
+
+//     // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+//     ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+//     // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+//     ScrollTrigger.refresh();
+
+//   }
+//   locomotive()
+// }
+
+if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
   function locomotive() {
     gsap.registerPlugin(ScrollTrigger);
 
     // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
-
     const locoScroll = new LocomotiveScroll({
       el: document.querySelector("#index-main"),
-      smooth: true
+      smooth: true, // Enable smooth scrolling on all devices
+      smartphone: {
+        smooth: true,
+      },
+      tablet: {
+        smooth: true,
+      }
     });
-    // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+
+    // Each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
     locoScroll.on("scroll", ScrollTrigger.update);
 
-    // tell ScrollTrigger to use these proxy methods for the "#index-main" element since Locomotive Scroll is hijacking things
+    // Tell ScrollTrigger to use these proxy methods for the "#index-main" element since Locomotive Scroll is hijacking things
     ScrollTrigger.scrollerProxy("#index-main", {
       scrollTop(value) {
         return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-      }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+      },
       getBoundingClientRect() {
         return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
       },
-      // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+      // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all!
+      // So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile.
+      // We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
       pinType: document.querySelector("#index-main").style.transform ? "transform" : "fixed"
     });
 
-    // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+    // Each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
     ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-    // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+    // After everything is set up, refresh ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
     ScrollTrigger.refresh();
-
   }
-  locomotive()
+
+  locomotive();
 }
+
+
+
 
 // Locomotive for about page
 // if (window.location.pathname == "/MinTechBackup/about.html") {
@@ -174,7 +226,13 @@ if (window.location.pathname == "/about.html") {
 
     const locoScroll = new LocomotiveScroll({
       el: document.querySelector("#about-main"),
-      smooth: true
+      smooth: true,
+      smartphone: {
+        smooth: true,
+      },
+      tablet: {
+        smooth: true,
+      }
     });
     // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
     locoScroll.on("scroll", ScrollTrigger.update);
@@ -250,25 +308,129 @@ function HiddenNavBar() {
 HiddenNavBar();
 
 
+// function HiddenNavBar2() {
+//   let lastScrollTop = 0;
+//   let animating = false;
+
+//   document.addEventListener("scroll", function() {
+//     if (animating) return; // Prevent new scroll interactions while animating
+
+//     let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+//     if (currentScrollTop > lastScrollTop) {
+//       // Scrolling down, show the navigation bar
+//       animating = true;
+//       gsap.to("#nav3", {
+//         top: "0%",
+//         duration: 0.5,
+//         ease: Power4.easeNone,
+//         onComplete: function() {
+//           animating = false; // Reset animation flag after animation completes
+//         }
+//       });
+//     } else {
+//       // Scrolling up, hide the navigation bar
+//       animating = true;
+//       gsap.to("#nav3", {
+//         top: "-10%",
+//         duration: 0.5,
+//         ease: Power4.easeNone,
+//         onComplete: function() {
+//           animating = false; // Reset animation flag after animation completes
+//         }
+//       });
+//     }
+
+//     lastScrollTop = currentScrollTop;
+//   });
+// }
+
+// HiddenNavBar2();
+
+
+function HiddenNavBar2() {
+  let lastScrollTop = 0;
+  let animating = false;
+
+  function updateNavPosition() {
+    if (animating) return; // Prevent new scroll interactions while animating
+
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScrollTop > lastScrollTop || currentScrollTop < 0) {
+      // Scrolling down or at the top, show the navigation bar
+      animating = true;
+      gsap.to("#nav3", {
+        top: "0%",
+        duration: 0.5,
+        ease: Power4.easeNone,
+        onComplete: function () {
+          animating = false; // Reset animation flag after animation completes
+        }
+      });
+    } else {
+      // Scrolling up, hide the navigation bar
+      animating = true;
+      gsap.to("#nav3", {
+        top: "-10%",
+        duration: 0.5,
+        ease: Power4.easeNone,
+        onComplete: function () {
+          animating = false; // Reset animation flag after animation completes
+        }
+      });
+    }
+
+    lastScrollTop = currentScrollTop;
+  }
+
+  let rafId;
+  function throttleScroll() {
+    cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(updateNavPosition);
+  }
+
+  document.addEventListener("scroll", throttleScroll);
+
+  // Initial update
+  updateNavPosition();
+}
+
+HiddenNavBar2();
+
+
+
+
+
 function MenuAndBack() {
   var flag = 0;
-  document.querySelector("#menu-click").addEventListener("click", function () {
-    if (flag == 0) {
-      var menu = document.querySelector(".menu")
-      menu.style.left = "0%"
-      document.querySelector('.body').style.overflowY = 'hidden'
-      flag = 1;
-    } else {
-      var menu = document.querySelector(".menu")
-      menu.style.left = "-100%"
-      document.querySelector('.body').style.overflowY = 'auto'
-      flag = 0;
+
+  // Adding event listener to the parent element of all the menu-click elements
+  document.body.addEventListener("click", function (event) {
+    // Check if the clicked element has the class "menu-click"
+    if (event.target.classList.contains("menu-icon")) {
+      if (flag == 0) {
+        var menu = document.querySelector(".menu");
+        if(event.target.classList.contains("main-nav")){
+          menu.style.top = "25.2vw";
+        }
+        menu.style.left = "0%";
+        document.querySelector('.body').style.overflowY = 'hidden';
+        flag = 1;
+      } else {
+        var menu = document.querySelector(".menu");
+        menu.style.left = "-100%";
+        menu.style.top = "12vw"
+        document.querySelector('.body').style.overflowY = 'auto';
+        flag = 0;
+      }
     }
-  })
-  document.querySelector(".main").addEventListener("click", function (ev) {
-    if (ev.target.classList.contains("abcd")) {
+  });
+  document.querySelector(".body").addEventListener("click", function (ev) {
+    if (!ev.target.classList.contains("menu") && (!ev.target.classList.contains("menu-icon"))) {
       var menu = document.querySelector(".menu")
       menu.style.left = "-100%"
+      menu.style.top = "12vw"
       document.querySelector('.body').style.overflowY = 'auto'
       flag = 0;
     }

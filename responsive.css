@@ -4,6 +4,7 @@
         width: 100%;
         height: 100%;
         overflow-y: auto;
+        /* position: relative; */
     }
 
     /* Top Screen OR Loader page responsive code */
@@ -105,7 +106,7 @@
     }
 
     .text-heading h2{
-        font-size: 2.4vw;
+        font-size: 2.3vw;
     }
 
     .text-heading p {
@@ -121,9 +122,11 @@
         margin-right: 0vw;
     }
 
-    /* #nav3{
-        display: none;
-    } */
+    /* Hidden Nav Bar */
+    #nav3{
+        position: fixed;
+        z-index: 999999;
+    }
 
     /* Nav-Bar 2 Responsive Code  */
     .navs{

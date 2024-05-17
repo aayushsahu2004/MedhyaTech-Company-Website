@@ -109,8 +109,7 @@ html {
 .page1{
     width: 100%;
     min-height: 100vh;
-    position: relative;
-    overflow: hidden;
+
 }
 
 
@@ -191,6 +190,11 @@ html {
     gap: 4vw;
 }
 
+#hiddenNav{
+    position: fixed;
+    top: -100%;
+}
+
 .logo{
     width: 15vw;
     height: 4vw;
@@ -240,14 +244,11 @@ html {
     width: 100%;
 }
 
-/* .navs a:hover{
-    border-bottom: 0.2vw solid black;
-} */
 
 /* Hidden Nav Bar */
 #nav3{
     position: absolute;
-    z-index: 99;
+    z-index: 9999;
     top: -10%;
 }
 
@@ -357,9 +358,9 @@ html {
 .menu{
     width: 90%;
     height: 10vh;
-    position: absolute;
+    position: fixed;
     left: -100%;
-    top: 25.2vw;
+    top: 12vw;
     z-index: 99;
     display: flex;
     flex-direction: column;
