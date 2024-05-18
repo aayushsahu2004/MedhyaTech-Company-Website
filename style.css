@@ -100,8 +100,8 @@ html {
     color: green;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    font-family: regular;
+    z-index: 99999999;
+    font-family: mediumm;
     letter-spacing: 0.06vw;
 }
 
@@ -313,7 +313,6 @@ html {
 
 .text h1 span{
     color: #ff4d00;
-    /* color: #40C057; */
 }
 
 .text p{
@@ -459,7 +458,7 @@ html {
     color: black;
 }
 
-.page2-container{
+.containers{
     width: 100%;
     height: 80%;
     margin-top: 4vw;
@@ -533,15 +532,15 @@ html {
 .page3{
     width: 100%;
     height: 120vh;
-    background-image: url(./Images/colab-bg-img.webp);
+    /* background-image: url(./Images/colab-bg-img.webp); */
     background-size: cover;
     background-position: center;
 }
 
-.page3-overlay{
+.overlay{
     width: 100%;
     height: 100%;
-    background-color: #000000eb;
+    background-color: #000000e8;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -703,7 +702,6 @@ html {
     align-items: center; 
     padding: 0vw 5vw;
     gap: 2vw;
-
 }
 
 #services-top2{

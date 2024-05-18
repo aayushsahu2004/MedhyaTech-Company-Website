@@ -1,6 +1,6 @@
 @media (max-width:700px) {
 
-    body{
+    body {
         width: 100%;
         height: 100%;
         overflow-y: auto;
@@ -8,27 +8,28 @@
     }
 
     /* Top Screen OR Loader page responsive code */
-    #top-screen{
+    #top-screen {
         width: 100%;
         height: 100vh;
     }
 
-    #center{
+    #center {
         width: 100%;
         height: 80%;
         display: flex;
         flex-direction: column;
     }
 
-    #name h1{
+    #name h1 {
         font-size: 10vw;
         text-align: center;
     }
 
-    #name p{
+    #name p {
         font-size: 5vw;
     }
-    #text{
+
+    #text {
         height: 40%;
         width: 100%;
         display: flex;
@@ -37,40 +38,44 @@
         justify-content: space-between;
     }
 
-    #text h1{
+    #text h1 {
         font-size: 20vw;
     }
 
-    #top{
-        position: absolute;
-    }
-    #second-top{
-        position: absolute;
-    }
-    #bottom{
-        position: absolute;
-    }
-    #second-bottom{
+    #top {
         position: absolute;
     }
 
-    .page1{
+    #second-top {
+        position: absolute;
+    }
+
+    #bottom {
+        position: absolute;
+    }
+
+    #second-bottom {
+        position: absolute;
+    }
+
+    .page1 {
         min-height: 80vh;
     }
-    .container{
+
+    .container {
         height: 100%;
     }
 
     /* Show Notification */
 
-    .notification{
+    .notification {
         top: 8vw;
         padding: 2vw;
         letter-spacing: 0.05vw;
     }
 
     /* Nav-Bar 1 Responsive code */
-    .page1 #nav1{
+    .page1 #nav1 {
         width: 100%;
         height: 13vw;
         background-color: #1B1F2E;
@@ -80,32 +85,33 @@
         padding: 0vw 4vw;
     }
 
-    .head-text{
+    .head-text {
         width: 40vw;
         height: 9vw;
     }
 
-    .head-text:nth-child(1){
+    .head-text:nth-child(1) {
         justify-content: start;
         width: 22vw;
     }
 
-    .head-text:nth-child(2){
+    .head-text:nth-child(2) {
         width: 24vw;
     }
 
-    .head-text:nth-child(3){
+    .head-text:nth-child(3) {
         width: 24vw;
     }
 
-    .head-text:nth-last-child(1){
+    .head-text:nth-last-child(1) {
         width: 25vw;
     }
-    .head-text .main-icon{
+
+    .head-text .main-icon {
         width: 3vw;
     }
 
-    .text-heading h2{
+    .text-heading h2 {
         font-size: 2.3vw;
     }
 
@@ -113,23 +119,23 @@
         font-size: 1.8vw;
     }
 
-    .head-text:nth-last-child(1) .text-heading{
+    .head-text:nth-last-child(1) .text-heading {
         margin-top: 2.1vw;
     }
 
-    .icons img{
+    .icons img {
         width: 3.2vw;
         margin-right: 0vw;
     }
 
     /* Hidden Nav Bar */
-    #nav3{
+    #nav3 {
         position: fixed;
         z-index: 999999;
     }
 
     /* Nav-Bar 2 Responsive Code  */
-    .navs{
+    .navs {
         width: 100%;
         height: 12vw;
         background-color: #ff4d00;
@@ -140,37 +146,37 @@
         padding: 1vw 4vw;
     }
 
-    .navs a{
+    .navs a {
         display: none;
     }
 
-    .navs h1{
+    .navs h1 {
         display: initial;
     }
 
-    .logo{
+    .logo {
         width: 34vw;
         height: 10vw;
     }
 
-    .logo img{
+    .logo img {
         width: 100%;
         height: 100%;
     }
 
-    .menu-icon{
+    .menu-icon {
         display: initial;
         width: 9vw;
     }
 
-    .container{
+    .container {
         width: 100%;
         height: calc(100vh - 25vw);
         position: relative;
     }
 
     /* Page1 Text Responsive Code */
-    .text{
+    .text {
         width: 100%;
         height: 40%;
         position: absolute;
@@ -180,7 +186,7 @@
         text-align: center;
     }
 
-    .text h1{
+    .text h1 {
         color: white;
         font-family: boldd;
         font-style: normal;
@@ -190,7 +196,8 @@
         margin-bottom: 2vw;
     }
 
-    .text p, .text a{
+    .text p,
+    .text a {
         width: 80%;
         font-size: 2.8vw;
         font-weight: 400;
@@ -200,21 +207,21 @@
         margin-left: 10vw;
     }
 
-    .about-text{
+    .about-text {
         margin-left: 5vw !important;
         text-align: center;
     }
 
-    .text button{
+    .text button {
         font-size: 2.5vw;
     }
 
-    #abc{
+    #abc {
         display: none;
     }
-    
+
     /* Hidden Menu Responsive Code */
-    .menu{
+    .menu {
         width: 85%;
         height: 50vh;
         transition: all ease 0.4s;
@@ -222,45 +229,46 @@
     }
 
     /* Each Page Heading Responsive Code  */
-    .heading{
-        width: 40vw; 
+    .heading {
+        width: 40vw;
         height: 8vw;
     }
-    .heading h4{
+
+    .heading h4 {
         font-size: 3vw;
         letter-spacing: 0.4vw;
     }
 
-    .separator .dot{
+    .separator .dot {
         width: 2vw;
         height: 2vw;
         border-radius: 50%;
     }
 
-    .separator .line{
+    .separator .line {
         width: 12vw;
         height: 0.35vw;
     }
-    
+
     /* Page2 About Us Page Responsive Code  */
-    .page2{
+    .page2 {
         width: 100%;
         height: 100vh;
         padding-bottom: 0vw;
     }
 
-    .page2-container{
-        flex-direction: column; 
+    .containers {
+        flex-direction: column;
         margin-top: 4vw;
         gap: 10vw;
         height: 90%;
     }
 
-    .page2-left{
+    .page2-left {
         width: 100%;
     }
 
-    .main-heading{
+    .main-heading {
         font-size: 5vw;
         letter-spacing: 0.15vw;
     }
@@ -272,92 +280,93 @@
         margin: 3vw 0vw;
     }
 
-    .page2-text{
+    .page2-text {
         margin-top: 2vw;
     }
 
-    .page2-text img{
+    .page2-text img {
         width: 6vw;
     }
 
-    .page2-text h4{
+    .page2-text h4 {
         font-size: 3vw;
         letter-spacing: 0.15vw;
     }
 
-    .page2-left a button{
+    .page2-left a button {
         font-size: 3.5vw;
         padding: 2vw 3vw;
         margin-top: 4vw;
     }
-    
-    .page2-right{
+
+    .page2-right {
         width: 100%;
     }
 
 
     /* Page3 Colab Page Responsive code */
-    .page3{
+    .page3 {
         width: 100%;
-        min-height: 100vh;
+        height: fit-content;
     }
 
-    .page3-overlay{
+    .overlay {
         flex-direction: column-reverse;
         justify-content: center;
+        padding: 10vw 5vw;
     }
 
-    .page3 #left{
+    .page3 #left {
         width: 100%;
         height: 45%;
         gap: 5vw;
     }
 
-    .page3 #right{
+    .page3 #right {
         width: 100%;
         height: 40%;
         align-items: flex-start;
     }
 
-    #bottom-text{
+    #bottom-text {
         flex-direction: column;
         gap: 0vw;
     }
 
-    .bottom-text-head{
+    .bottom-text-head {
         display: flex;
         flex-direction: column;
         gap: 5vw;
     }
 
-    .bottom-text-head:nth-last-child(1){
+    .bottom-text-head:nth-last-child(1) {
         margin-top: 5vw;
     }
 
-    #last-sub-text{
+    #last-sub-text {
         margin-top: 1.8vw;
     }
 
-    .sub-texts{
+    .sub-texts {
         gap: 3vw;
     }
 
-    .sub-texts img{
+    .sub-texts img {
         width: 6vw;
     }
 
-    .sub-texts h4{
+    .sub-texts h4 {
         font-size: 3vw;
         letter-spacing: 0.15vw;
     }
 
     /* Page4 Services Page Responsive Code  */
-    #page4{
+    #page4 {
         width: 100%;
         height: fit-content;
     }
-     
-    #services-top{
+
+    #services-top {
         width: 100%;
         height: 30vw;
         display: flex;
@@ -369,149 +378,150 @@
         gap: 4vw;
     }
 
-    #services-top h1{
+    #services-top h1 {
         font-size: 6vw;
         letter-spacing: 0.15vw;
     }
 
-    #services-top a button{
+    #services-top a button {
         font-size: 3vw;
         padding: 2vw 3vw;
     }
 
-    #services-top1{
+    #services-top1 {
         margin-top: 12vw;
         height: 130vw;
         flex-direction: column;
         gap: 8vw;
     }
 
-    #services-top2{
+    #services-top2 {
         height: 130vw;
         flex-direction: column;
         gap: 8vw;
     }
 
-    .services{
+    .services {
         width: 100%;
         justify-content: space-between;
     }
 
-    .serv-container{
+    .serv-container {
         width: 45%;
         border-radius: 1vw;
     }
 
-    .serv-container .circle{
+    .serv-container .circle {
         width: 8vw;
         height: 8vw;
         top: -7%;
     }
-    
-    .circle img{
+
+    .circle img {
         width: 4vw;
     }
 
-    .serv-text h2{
+    .serv-text h2 {
         font-size: 3.5vw;
         margin-top: 4vw;
         margin-bottom: 2vw;
         letter-spacing: 0.15vw;
     }
 
-    .serv-text p{
+    .serv-text p {
         font-size: 2.5vw;
         line-height: 3vw;
     }
 
     /* Page5 Process Page Respomsive code */
-    #page5{
+    #page5 {
         width: 100%;
-        height: 100vh;
+        height: fit-content;
     }
 
-    #top-div{
+    #top-div {
         width: 60%;
     }
 
-    #top-div h1{
+    #top-div h1 {
         font-size: 6vw;
         letter-spacing: 0.15vw;
         margin-top: 4vw;
     }
 
-    #overlay #process-div{
+    #overlay #process-div {
         width: 100%;
-        height: 60vh;
+        height: fit-content;
         flex-direction: column;
+        justify-content: center;
     }
 
-    .proc-circle{
+    .proc-circle {
         width: 55vw;
         height: 55vw;
     }
 
-    .proc-circle:nth-child(2){
+    .proc-circle:nth-child(2) {
         margin-top: 0vw;
     }
 
-    .circle-inside{
+    .circle-inside {
         width: 45vw;
         height: 45vw;
     }
 
-    .circle-inside h3{
+    .circle-inside h3 {
         font-size: 5.1vw;
         letter-spacing: 0.15vw;
     }
 
-    .circle-inside p{
+    .circle-inside p {
         font-size: 3.3vw;
         letter-spacing: 0.15vw;
     }
 
-    .small-circle{
+    .small-circle {
         width: 18vw;
         height: 18vw;
         top: -15%;
         right: 5%;
     }
 
-    .small-circle h2{
+    .small-circle h2 {
         font-size: 8vw;
     }
 
     /* Page6 Why Choose Us Responsive Code */
 
-    #page6{
+    #page6 {
         height: 120vh;
     }
 
-    #page6-top-container{
+    #page6-top-container {
         width: 100%;
         height: 25%;
     }
 
-    #page6-top-container h1{
+    #page6-top-container h1 {
         font-size: 6vw;
         letter-spacing: 0.15vw;
         margin-top: 4vw;
         margin-bottom: 3vw;
     }
 
-    #page6-top-container p{
+    #page6-top-container p {
         font-size: 3.2vw;
         line-height: 5vw;
         letter-spacing: 0.15vw;
     }
 
-    #page6-bottom-container{
+    #page6-bottom-container {
         height: 75%;
         flex-direction: column;
         gap: 5vw;
     }
 
-    .left-right{
+    .left-right {
         width: 100%;
         height: 50%;
         display: flex;
@@ -519,99 +529,100 @@
         justify-content: space-between;
     }
 
-    .choose-data{
+    .choose-data {
         width: 45%;
         height: 100%;
         /* box-shadow: 0vw 0vw 0.2vw 0.2vw #e2e2e2; */
-        box-shadow: 20px 20px 60px #00000041,inset -20px -20px 60px #ffffff40;
+        box-shadow: 20px 20px 60px #00000041, inset -20px -20px 60px #ffffff40;
         padding: 0vw 1vw;
         border-radius: 1vw;
     }
 
-    .heading-text{
+    .heading-text {
         height: 12vw;
         gap: 2vw;
     }
 
-    .heading-text img{
+    .heading-text img {
         width: 6vw;
     }
 
-    .heading-text h2{
+    .heading-text h2 {
         font-size: 3.5vw;
         letter-spacing: 0.15vw;
     }
 
-    .choose-data p{
+    .choose-data p {
         font-size: 2.5vw;
         line-height: 3.2vw;
         letter-spacing: 0.08vw;
     }
 
-    #bottom-center{
+    #bottom-center {
         width: 100%;
         height: 40%;
     }
 
     /* Our Reviews and Details Responsive Code */
 
-    #details{
+    #details {
         width: 100%;
         height: 20vh;
     }
 
-    .details-item{
+    .details-item {
         height: 14vw;
     }
 
-    .details-item img{
+    .details-item img {
         width: 6vw;
     }
 
-    .details-item h2, h3{
+    .details-item h2,
+    h3 {
         font-size: 4vw;
         letter-spacing: 0.15vw;
     }
 
-    .details-item h2{
+    .details-item h2 {
         margin-right: 2vw;
     }
 
-    .details-item p{
+    .details-item p {
         font-size: 1.5vw;
     }
 
     /* Page7 Our Work And Pojects Responsive Code */
 
-    #page7{
+    #page7 {
         width: 100%;
         height: 80vh;
     }
 
-    #page7-top-container{
+    #page7-top-container {
         width: 100%;
         height: 42%;
     }
 
-    #page7-top-container h1{
+    #page7-top-container h1 {
         font-size: 6vw;
         letter-spacing: 0.15vw;
         margin-top: 4vw;
         margin-bottom: 3vw;
     }
 
-    #page7-top-container p{
+    #page7-top-container p {
         font-size: 3.2vw;
         line-height: 5vw;
         letter-spacing: 0.15vw;
     }
 
-    #page7-bottom-container{
+    #page7-bottom-container {
         width: 100%;
         height: 50%;
     }
 
-    .page7-project-container{
+    .page7-project-container {
         width: 50%;
         height: 90%;
         margin-left: 3.5vw;
@@ -620,69 +631,69 @@
 
     /* Contact Us Page 8 Responsive Code */
 
-    #page8{
+    #page8 {
         width: 100%;
         height: 80vh;
     }
 
-    #page8-top-container{
+    #page8-top-container {
         width: 100%;
         height: 65%;
     }
 
-    #top-text-container{
+    #top-text-container {
         width: 100%;
     }
 
-    #top-text-container h1{
+    #top-text-container h1 {
         font-size: 6vw;
         letter-spacing: 0.15vw;
         margin-top: 10vw;
         margin-bottom: 4vw;
     }
 
-    #top-text-container p{
+    #top-text-container p {
         font-size: 3.2vw;
         line-height: 5vw;
         letter-spacing: 0.15vw;
     }
 
-    #top-text-container a button{
+    #top-text-container a button {
         font-size: 3.5vw;
         padding: 2vw 3vw;
         margin-top: 4vw;
     }
 
-    #page8-bottom-container{
+    #page8-bottom-container {
         width: 100%;
         height: 45%;
         margin-top: 15vw;
         padding: 0vw;
     }
 
-    #contact-container{
+    #contact-container {
         flex-direction: column;
     }
 
-    .contact-details{
+    .contact-details {
         width: 52%;
     }
 
-    .contact-details .img-icon{
+    .contact-details .img-icon {
         width: 10vw;
         height: 10vw;
     }
 
-    .contact-details .img-icon img{
+    .contact-details .img-icon img {
         width: 5vw;
     }
 
-    .contact-details h2{
+    .contact-details h2 {
         font-size: 5vw;
         letter-spacing: 0.15vw;
     }
 
-    .contact-details p{
+    .contact-details p {
         margin-top: 0.8vw;
         font-size: 3vw;
         letter-spacing: 0.15vw;
@@ -690,75 +701,75 @@
 
     /* Page9 Footer Page Responsive Code */
 
-    #page9{
+    #page9 {
         height: 200vh;
         padding-top: 40vw;
         background-position: center;
     }
 
-    #page9 .footer{
+    #page9 .footer {
         height: 95%;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .about-us{
+    .about-us {
         width: 70%;
         margin-bottom: 6vw;
     }
 
-    .about-us img{
+    .about-us img {
         width: 50vw;
     }
 
-    .about-us p{
+    .about-us p {
         font-size: 3.2vw;
         line-height: 4vw;
         letter-spacing: 0.15vw;
     }
 
-    .about-icons img{
+    .about-icons img {
         width: 6vw;
         transition: all ease 0.3s;
     }
 
-    .explore{
+    .explore {
         margin-left: 0vw;
         width: 100%;
         margin-bottom: 6vw;
     }
 
-    .footer-heading{
+    .footer-heading {
         font-size: 8vw;
         letter-spacing: 0.15vw;
     }
 
-    .footer-link{
+    .footer-link {
         font-size: 4.2vw;
         margin-top: 4vw;
     }
 
-    .footer-services{
+    .footer-services {
         width: 100%;
         margin-bottom: 10vw;
     }
 
-    .subscribe{
+    .subscribe {
         width: 70%;
     }
 
-    .subscribe p{
+    .subscribe p {
         font-size: 3.2vw;
         line-height: 4vw;
         letter-spacing: 0.15vw;
     }
 
-    .subscribe form{
+    .subscribe form {
         margin-top: 5vw;
         justify-content: flex-start;
     }
 
-    .email-address{
+    .email-address {
         width: 50vw;
         height: 8vw;
         font-size: 2.6vw;
@@ -766,98 +777,136 @@
         padding-left: 3vw;
     }
 
-    .email-send-btn{
+    .email-send-btn {
         width: 10vw;
         height: 8vw;
     }
 
-    .email-send-btn img{
+    .email-send-btn img {
         width: 5vw;
     }
 
-    .footer-bottom{
+    .footer-bottom {
         height: 5%;
         margin-top: 0vw;
     }
 
-    .footer-bottom p{
+    .footer-bottom p {
         font-size: 2.5vw;
     }
 
-    /* About Page Responsive Code */
+    /* About-Page Responsive Code */
 
-    #page3-heading{
+    #about-page2{
+        height: fit-content !important;
+        margin-bottom: 5vw;
+    }
+
+    #about-page2 .containers{
+        height: fit-content;
+        justify-content: center;
+        gap: 4vw;
+    }
+
+    #about-page2-left{
+        height: fit-content !important;
+    }
+    #about-page2 .page2-right{
+        height: fit-content;
+    }
+
+    /* About-Page Page3  */
+
+    #about-page3{
+        height: fit-content;
+    }
+
+    #page3-heading {
         top: 3% !important;
     }
 
-    #about-page3-overlay{
+    #about-page3-overlay {
         flex-direction: column;
+        height: fit-content;
         gap: 0;
     }
 
-    #about-left{
+    #about-left {
         width: 100%;
-        margin-top: 20vw;
     }
 
-    #about-right{
+    #about-right {
         width: 100%;
-        /* background-color: red; */
+        height: 65vw;
     }
 
-    #buttondiv{
+    #buttondiv {
         height: 10vw !important;
     }
 
-    #button1, #button2, #button3{
+    #button1,
+    #button2,
+    #button3 {
         border-bottom: 1.2vw solid #ff4d00;
         font-size: 2.5vw;
         letter-spacing: 0.15vw;
     }
 
-    #mainContainer{
+    #mainContainer {
         height: calc(100% - 14vw) !important;
     }
 
-    .scroll-container{
+    .scroll-container {
         padding: 4vw 0vw !important;
         gap: 4vw !important;
     }
 
-    .container-img{
-        height: 90% !important;
+    .container-img {
+        height: 40vw !important;
     }
+
+    /* About-Page Page4 */
 }
 
-@media (max-width:540px){
+@media (max-width:540px) {
 
-    .page2{
-        height: 120vh;
+    .page2 {
+        height: fit-content;
     }
 
     /* Page 5 Responsive Code */
-    
-    #page5{
+
+    #page5 {
         width: 100%;
-        min-height: 180vh;
+        height: fit-content;
     }
 
-    #overlay{
+    #overlay {
         height: 100%;
     }
 
-    #overlay #process-div{
+    #overlay #process-div {
         width: 100%;
-        height: 140vh;
-        margin-top: 15vw;
+        height: fit-content;
         flex-direction: column;
         gap: 10vw;
     }
+
+    /* About Page Code */
+
+    #about-page3{
+        height: fit-content !important;
+    }
+
+    #about-page3-overlay{
+        height: fit-content;
+        padding-bottom: 0vw;
+    } 
 }
 
-@media(min-width: 700px) and (max-width: 1024px){
+@media(min-width: 700px) and (max-width: 1024px) {
 
-    #top-screen{
+    #top-screen {
         width: 100%;
         height: fit-content;
         padding: 15vw 0vw;
@@ -865,153 +914,237 @@
 
     /* Page1 Home Page Responsive Code */
 
-    .page1{
+    .page1 {
         min-height: calc(100vh - 85vw);
     }
 
-    .page1 #nav1{
+    .page1 #nav1 {
         padding: 0vw 1vw;
     }
 
-    #logo{
+    #logo {
         width: 20vw;
         height: 8vw;
     }
 
-    .container{
+    .container {
         height: 100%;
     }
 
     /* Page2 About Us Page Responsive Code  */
 
-    .page2{
+    .page2 {
         height: fit-content;
         padding: 5vw 3vw;
     }
 
-    .page2-container{
+    .containers {
+        flex-direction: column;
         height: 100%;
         margin-top: 3.5vw;
     }
 
-    .page2-text{
+    .page2-left {
+        width: 100%;
+    }
+
+    .main-heading {
+        font-size: 5vw;
+    }
+
+    .paragraph {
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+
+    .page2-text {
         margin-top: 2vw;
         margin-bottom: 1vw;
     }
 
-    .page2-right{
+    .page2-text h4 {
+        font-size: 2vw;
+    }
+
+    .page2-right {
+        width: 100%;
         margin-top: 5.5vw;
     }
 
     /* Page3 Collab Page Responsive Code */
 
-    .page3{
+    .page3 {
         height: fit-content;
     }
 
-    .page3-overlay{
-        height: 100%;
+    .overlay {
+        height: fit-content;
         padding: 5vw 3vw;
+        flex-direction: column-reverse;
     }
 
-    #right-text p{
+    .overlay #left,
+    #right {
+        width: 100%;
+    }
+
+    #right-text p {
         margin-top: 2vw;
     }
 
-    .sub-texts{
+    .sub-texts {
         margin-top: 2vw;
+    }
+
+    .sub-texts h4 {
+        font-size: 2vw;
+        letter-spacing: 0.2vw;
     }
 
     /* Page 4 Service Page All Code Start from Here  */
 
-    #page4{
+    #page4 {
         height: fit-content;
         padding: 5vw 0vw;
     }
 
-    #services-top, #services-top1, #services-top2{
+    #services-top {
+        margin-top: 5vw;
+        margin-bottom: 8vw;
+    }
+
+    #services-top,
+    #services-top1,
+    #services-top2 {
         padding: 0vw 3vw;
     }
 
     /* Page5 Process Page Respomsive code */
-    #page5{
+    #page5 {
         height: fit-content;
     }
 
-    #page5 #overlay{
+    #page5 #overlay {
         padding: 5vw 3vw;
         height: fit-content;
     }
 
-    #overlay #process-div{
+    #overlay #process-div {
         height: fit-content;
         margin-top: 5vw;
     }
 
     /* Page6 Why Choose Us Responsive Code */
-    #page6{
+    #page6 {
         height: fit-content;
         padding: 5vw 3vw 2vw 3vw;
     }
 
-    #page6-bottom-container{
+    #page6-bottom-container {
         margin-top: 4vw;
     }
 
-    .choose-data{
+    .choose-data {
         margin-bottom: 3vw;
     }
 
     /* Details Page About Projects, Experience */
 
-    #details{
+    #details {
         height: fit-content;
     }
 
-    .details-overlay{
+    .details-overlay {
         padding: 8vw 3vw;
     }
 
     /* Our Work And Projects */
 
-    #page7{
-       height: fit-content;
-       padding: 5vw 3vw;
+    #page7 {
+        height: fit-content;
+        padding: 5vw 3vw;
     }
 
-    .page7-project-container{
+    .page7-project-container {
         width: 18vh;
         height: 25vh;
     }
 
     /* Contact Us Page 8  */
 
-    #page8{
+    #page8 {
         height: fit-content;
         position: relative;
         padding: 0vw 3vw 16vw 3vw;
     }
 
-    #page8-bottom-container{
+    #page8-bottom-container {
         width: 94%;
         position: absolute;
     }
 
     /* Page9 Footer Page  */
 
-    #page9{
-        height: 110vh;
+    #page9 {
+        height: 45vh;
     }
 
-    #page9 .footer{
+    #page9 .footer {
         height: fit-content;
         padding: 0vw 3vw;
     }
+
+    /* About Page  */
+
+    /* About page2  */
+
+    #about-page2 .containers .page2-left {
+        height: fit-content;
+    }
+
+    #about-page2 .containers .page2-right {
+        padding-bottom: 10vw;
+    }
+
+    /* About Page3 */
+
+    #about-page3{
+        /* background-color: red; */
+        height: fit-content !important;
+    }
+
+    #about-page3-overlay {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content !important;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100% !important;
+    }
+
+    .about-right{
+        height: 30vh !important;
+        margin-top: 0vw !important;
+    }
+
+    .about-right{
+        height: fit-content;
+    }
+
+    #buttondiv {
+        height: 6vw !important;
+    }
+
+    .button {
+        font-size: 2vw !important;
+    }
+
 }
 
-
-@media(min-width: 700px) and (max-width: 912px){
-    #top-screen{
+@media(min-width: 700px) and (max-width: 912px) {
+    #top-screen {
         width: 100%;
         height: fit-content;
         padding: 30vw 0vw;

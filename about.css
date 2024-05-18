@@ -1,42 +1,44 @@
 /* About Page Css */
 
+/* About Heading */
+.about-heading{
+    position: absolute;
+    top: 5vw;
+}
+
 /* About page2 */
 
 #about-page2{
-    height: 110vh !important;
+    height: 110vh;
+
 }
 
 #about-page2-left{
     height: 75%;
 }
 
-#about-left h1{
-    color: #ffffffe7;
-}
+
 
 /* About page3 */
 
 #about-page3{
-    height: 95vh;
-    background-image: url("./Images/About-Page3-Bg-Img.webp");
+    height: 98vh;
+    /* background-image: url("./Images/About-Page3-Bg-Img.webp"); */
     position: relative;
 }
 
-#page3-heading{
-    position: absolute;
-    top: 10%;
-}
-
-#about-page3-overlay{
-    background-color: #3d3d3de8;
-    align-items: center;
-    justify-content: center;
+#about-page3 .about-heading{
+    color: #ffffffe7;
 }
 
 .about-left{
     height: 75% ;
     margin-top: 5vw;
     width: 50%;
+}
+
+#about-left h1{
+    color: #ffffffe7;
 }
 
 .about-left .paragraph{
@@ -124,4 +126,76 @@
 
 #container2, #container3{
     left: 100%;
+}
+
+
+/* About Page4 */
+#about-page4{
+    width: 100%;
+    height: 105vh;
+    background-image: url("https://images.unsplash.com/photo-1638184984605-af1f05249a56?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    position: relative;
+    padding: 0vw;
+}
+
+#about-page4 .about-heading{
+    color: black;
+}
+
+#about-page4 .about-heading{
+    width: 50%;
+}
+
+#about-page4 .about-heading .main-heading{
+    margin-top: 1.5vw;
+}
+
+#about-page4 .overlay{
+    background-color: #ffffffd3;
+    justify-content: center;
+}
+
+.about-page4-img{
+    width: 25vw;
+    height: 25vw;
+    background-color: black;
+    margin-top: 13vw;
+    border-radius: 0.5vw;
+    position: relative;
+}
+
+.top-div{
+    width: 80%;
+    height: 25%;
+    background-color: #ff4d00;
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    -webkit-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+    transform: perspective(500px) rotateX(90deg);
+    border-top-left-radius: 0.4vw;
+    border-top-right-radius: 0.4vw;
+}
+
+.bottom-div{
+    width: 80%;
+    height: 20%;
+    background-color: #10102E;
+    position: absolute;
+    bottom: -8%;
+    left: 10%;
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw;
+    -webkit-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+    transform: perspective(500px) rotateX(-90deg);
+}
+
+.about-page4-img:hover .top-div{
+    transform: perspective(500px) rotateX(0deg);
+}
+.about-page4-img:hover .bottom-div{
+    transform: perspective(500px) rotateX(0deg);
 }
