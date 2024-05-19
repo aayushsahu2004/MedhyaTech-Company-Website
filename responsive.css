@@ -626,12 +626,13 @@
 
     /* Contact Us Page 8 Responsive Code */
 
-    #page8 {
+    .contact-us {
         width: 100%;
-        height: 80vh;
+        height: 80vh; 
+        padding-top: 5vw;
     }
 
-    #page8-top-container {
+    .contact-us-top-container {
         width: 100%;
         height: 65%;
     }
@@ -657,7 +658,7 @@
         margin-top: 4vw;
     }
 
-    #page8-bottom-container {
+    .contact-us-bottom-container {
         width: 100%;
         height: 45%;
         margin-top: 15vw;
@@ -692,15 +693,15 @@
         letter-spacing: 0.15vw;
     }
 
-    /* Page9 Footer Page Responsive Code */
+    /* Footer Page Responsive Code */
 
-    #page9 {
+    .footer-page {
         height: 200vh;
         padding-top: 40vw;
         background-position: center;
     }
 
-    #page9 .footer {
+    .footer-page .footer {
         height: 95%;
         flex-direction: column;
         align-items: flex-start;
@@ -860,9 +861,16 @@
 
     /* About-Page Page4 */
 
-    #about-page{
+    #about-page4{
         width: 100%;
-        height: fit-content;
+        height: fit-content !important;
+    }
+
+    #about-page4 .overlay{
+        padding-top: 35vw !important;
+        flex-direction: column;
+        gap: 0vw;
+        padding-bottom: 13vw;
     }
 
     #about-page4 .about-heading{
@@ -870,6 +878,22 @@
     }
     #about-page4 .about-heading .main-heading, .buttons{
         margin-top: 4vw !important;
+    }
+
+    .about-page4-img{
+        width: 100%!important;
+        height: 100vw !important;
+    }
+
+    .about-page4-img:nth-child(1) img{
+        object-position: -30% 30%;
+    }
+
+    .top-div .main-heading{
+        font-size: 6vw !important;
+    }
+    .bottom-div .buttons{
+        padding: 3vw 5vw !important;
     }
 }
 
@@ -915,6 +939,23 @@
         width: 100%;
         height: fit-content;
         padding: 15vw 0vw;
+    }
+
+    .heading{
+        width: 20vw;
+    }
+
+    .heading h4{
+        font-size: 2vw;
+    }
+    .heading .separator .line{
+        width: 10vw;
+        height: 0.3vw;
+    }
+
+    .heading .separator .dot{
+        width: 2.5vw;
+        height: 1.5vw;
     }
 
     /* Page1 Home Page Responsive Code */
@@ -1077,24 +1118,24 @@
 
     /* Contact Us Page 8  */
 
-    #page8 {
+    .contact-us {
         height: fit-content;
         position: relative;
-        padding: 0vw 3vw 16vw 3vw;
+        padding: 3vw 3vw 16vw 3vw;
     }
 
-    #page8-bottom-container {
+    .contact-us-bottom-container {
         width: 94%;
         position: absolute;
     }
 
-    /* Page9 Footer Page  */
+    /* Footer Page  */
 
-    #page9 {
+    .footer-page {
         height: 45vh;
     }
 
-    #page9 .footer {
+    .footer-page .footer {
         height: fit-content;
         padding: 0vw 3vw;
     }
@@ -1129,6 +1170,10 @@
         width: 100% !important;
     }
 
+    #about-left .main-heading{
+        margin-top: 5vw;
+    }
+
     .about-right{
         height: 30vh !important;
         margin-top: 0vw !important;
@@ -1144,6 +1189,40 @@
 
     .button {
         font-size: 2vw !important;
+    }
+
+    /* About Page4  */
+    #about-page4{
+        width: 100%;
+        height: fit-content !important;
+    }
+
+    #about-page4 .about-heading{
+        width: 70% !important;
+    }
+
+    #about-page4 .overlay{
+        padding-top: 20vw !important;
+        flex-direction: column;
+        gap: 0vw;
+        padding-bottom: 13vw;
+    }
+
+    .about-page4-img{
+        width: 100% !important;
+        height: 80vw !important;
+    }
+
+    .about-page4-img:nth-child(1) img{
+        object-position: -20% 20%;
+    }
+
+    .top-div .main-heading{
+        font-size: 6vw !important;
+    }
+    .bottom-div .buttons{
+        font-size: 3vw;
+        padding: 3vw 5vw !important;
     }
 
 }
