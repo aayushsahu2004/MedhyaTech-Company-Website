@@ -212,10 +212,6 @@
         text-align: center;
     }
 
-    .text button {
-        font-size: 2.5vw;
-    }
-
     #abc {
         display: none;
     }
@@ -226,6 +222,12 @@
         height: 50vh;
         transition: all ease 0.4s;
         background-color: #0B0616;
+    }
+
+    /* buttons code */
+    .buttons{
+        font-size: 3.5vw;
+        padding: 2vw 3vw;
     }
 
     /* Each Page Heading Responsive Code  */
@@ -293,9 +295,7 @@
         letter-spacing: 0.15vw;
     }
 
-    .page2-left a button {
-        font-size: 3.5vw;
-        padding: 2vw 3vw;
+    .page2-left .buttons {
         margin-top: 4vw;
     }
 
@@ -381,11 +381,6 @@
     #services-top h1 {
         font-size: 6vw;
         letter-spacing: 0.15vw;
-    }
-
-    #services-top a button {
-        font-size: 3vw;
-        padding: 2vw 3vw;
     }
 
     #services-top1 {
@@ -565,7 +560,7 @@
 
     /* Our Reviews and Details Responsive Code */
 
-    #details {
+    .details {
         width: 100%;
         height: 20vh;
     }
@@ -658,9 +653,7 @@
         letter-spacing: 0.15vw;
     }
 
-    #top-text-container a button {
-        font-size: 3.5vw;
-        padding: 2vw 3vw;
+    #top-text-container .buttons {
         margin-top: 4vw;
     }
 
@@ -866,6 +859,18 @@
     }
 
     /* About-Page Page4 */
+
+    #about-page{
+        width: 100%;
+        height: fit-content;
+    }
+
+    #about-page4 .about-heading{
+        width: 100% !important;
+    }
+    #about-page4 .about-heading .main-heading, .buttons{
+        margin-top: 4vw !important;
+    }
 }
 
 @media (max-width:540px) {
@@ -1050,7 +1055,7 @@
 
     /* Details Page About Projects, Experience */
 
-    #details {
+    .details {
         height: fit-content;
     }
 

@@ -332,26 +332,6 @@ html {
     margin-bottom: 2vw;
 }
 
-.text button{
-    padding: 1.1vw 2.8vw;
-    color: white;
-    background-color: #ff4d00;
-    font-size: 1.2vw;
-    letter-spacing: 0.08vw;
-    font-family: mediumm;
-    border-radius: 1vw;
-    cursor: pointer;
-    border: 0.1vw solid #ff4d00;
-    transition: all ease 0.3s;
-}
-
-.text button:hover{
-    background-color: white;
-    border: 0.1vw solid #ff4d00;
-    color: #ff4d00;
-}
-
-
 
 /* Menu for Responsive Design  */
 .menu{
@@ -445,6 +425,26 @@ html {
     color: #4d4d4d;
 }
 
+/* Button Code */
+.buttons{
+    padding: 1vw 2.5vw;
+    color: white;
+    background-color: #ff4d00;
+    font-size: 1.2vw;
+    letter-spacing: 0.08vw;
+    font-family: mediumm;
+    border-radius: 1vw;
+    cursor: pointer;
+    border: 0.1vw solid #ff4d00;
+    transition: all ease 0.3s;
+}
+
+.buttons:hover{
+    background-color: white;
+    border: 0.1vw solid #ff4d00;
+    color: #ff4d00;
+}
+
 /* Page2 About Us us  */
 
 .page2{
@@ -493,25 +493,10 @@ html {
     color: #2c2c2c;
 }
 
-.page2-left a button{
-    padding: 1vw 2.5vw;
-    border: none;
-    color: white;
-    background-color: #ff4d00;
-    font-size: 1.2vw;
-    font-family: mediumm;
-    border-radius: 1vw;
-    cursor: pointer;
-    border: 0.1vw solid #ff4d00;
-    transition: all ease 0.3s;
+.page2-left .buttons{
     margin-top: 2vw;
 }
 
-.page2-left a button:hover{
-    background-color: transparent;
-    border: 0.1vw solid #ff4d00;
-    color: #ff4d00;
-}
 
 .page2-right{
     width: 45%;
@@ -532,7 +517,7 @@ html {
 .page3{
     width: 100%;
     height: 120vh;
-    /* background-image: url(./Images/colab-bg-img.webp); */
+    background-image: url(./Images/colab-bg-img.webp);
     background-size: cover;
     background-position: center;
 }
@@ -676,24 +661,6 @@ html {
     margin-bottom: 4vw;
 }
 
-#services-top a button{
-    padding: 1.3vw 3vw;
-    border: none;
-    color: white;
-    background-color: #ff4d00;
-    font-size: 1.2vw;
-    font-family: mediumm;
-    border-radius: 1vw;
-    cursor: pointer;
-    border: 0.1vw solid #ff4d00;
-    transition: all ease 0.3s;
-}
-
-#services-top a button:hover{
-    background-color: transparent;
-    border: 0.1vw solid #ff4d00;
-    color: #ff4d00;
-}
 
 #services-top1{
     width: 100%;
@@ -789,7 +756,7 @@ html {
     bottom: -100%;
     right: -100%;
     transition: all ease 0.3s;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 .serv-container:hover #bg-img{
@@ -798,7 +765,7 @@ html {
 }
 
 .serv-container:hover{
-    scale: 1.02;
+    scale: 1.03;
 }
 
 #services:nth-last-child(2) .serv-container:nth-child(3) .circle img{
@@ -848,11 +815,11 @@ html {
 }
 
 .serv-container:hover .serv-text h2{
-    color: black;
+    color: whitesmoke;
 }
 
 .serv-container:hover .serv-text p{
-    color: #0B0616;
+    color: #FAFBFD;
 }
 
 
@@ -1069,7 +1036,7 @@ html {
 
 /* Details Page About Projects, Experience */
 
-#details{
+.details{
     width: 100%;
     height: 50vh;
     background-image: url(./Images/Details-bg-img.webp);
@@ -1193,42 +1160,48 @@ html {
 /* Page7 project Container Background images */
 
 .page7-project-container:nth-child(1){
-    margin-left: 0vw;
+    background-image: url(./Images/Project_img/Instagram-img2.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.page7-project-container:nth-child(2){
+    background-image: url(./Images/Project_img/SigniFico-Img1.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.page7-project-container:nth-child(3){
     background-image: url(./Images/Project_img/HotelOdisej.webp);
     background-size: cover;
     background-position: center;
 }
-.page7-project-container:nth-child(2){
+.page7-project-container:nth-child(4){
     background-image: url(./Images//Project_img/MyPortfolio.webp);
     background-size: cover;
     background-position: center;
 }
-.page7-project-container:nth-child(3){
+.page7-project-container:nth-child(5){
     background-image: url(./Images//Project_img/NetrixWebsite.webp);
     background-size: cover;
     background-position: center;
 }
-.page7-project-container:nth-child(4){
-    background-image: url(./Images/Project_img/PremierWebsite.webp);
-    background-size: cover;
-    background-position: center;
-}
-.page7-project-container:nth-child(5){
-    background-image: url(./Images/Project_img/YuboWebsite.webp);
-    background-size: cover;
-    background-position: center;
-}
 .page7-project-container:nth-child(6){
-    background-image: url(./Images/Project_img/HogiWebsite.webp);
-    background-size: cover;
-    background-position: center;
-}
-.page7-project-container:nth-child(7){
     background-image: url(./Images/Project_img/Endasmu.webp);
     background-size: cover;
     background-position: center;
 }
+.page7-project-container:nth-child(7){
+    background-image: url(./Images/Project_img/PremierWebsite.webp);
+    background-size: cover;
+    background-position: center;
+}
 .page7-project-container:nth-child(8){
+    background-image: url(./Images/Project_img/HogiWebsite.webp);
+    background-size: cover;
+    background-position: center;
+}
+.page7-project-container:nth-child(9){
     background-image: url(./Images/Project_img/Portfolio2.webp);
     background-size: cover;
     background-position: center;
@@ -1318,24 +1291,6 @@ html {
     color: whitesmoke;
 }
 
-#top-text-container a button{
-    padding: 1.3vw 3vw;
-    border: none;
-    color: white;
-    background-color: #ff4d00;
-    font-size: 1.2vw;
-    font-family: mediumm;
-    border-radius: 1vw;
-    cursor: pointer;
-    border: 0.1vw solid #ff4d00;
-    transition: all ease 0.3s;
-}
-
-#top-text-container a button:hover{
-    background-color: white ;
-    border: 0.1vw solid #ff4d00;
-    color: #ff4d00;
-}
 
 #page8-bottom-container{
     width: 100%;

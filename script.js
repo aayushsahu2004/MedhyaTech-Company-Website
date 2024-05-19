@@ -436,16 +436,12 @@ function MenuAndBack() {
     }
   })
 
-  // document.querySelector(".main").addEventListener("click", function (ev) {
-  //     var menu = document.querySelector(".menu")
-  //     menu.style.left = "-100%"
-  //     document.querySelector('.body').style.overflowY = 'auto'
-  // })
+
 }
 MenuAndBack();
 
 // if ((window.location.pathname == "/MinTechBackup/" || window.location.pathname == "/MinTechBackup/index.html")) {
-if (window.location.pathname == "/" || window.location.pathname == "/index.html") {
+if (window.location.pathname == "/" || window.location.pathname == "/index.html" || window.location.pathname == "/about.html") {
   function DetailsFunction() {
     function DetailsInterval() {
       function firstchange() {
@@ -510,7 +506,7 @@ if (window.location.pathname == "/" || window.location.pathname == "/index.html"
     }
     var tl = gsap.timeline({
       scrollTrigger: {
-        trigger: '#details',
+        trigger: '.details',
         scroller: ".main",
         start: 'top 74%',
         end: "top 30%",
