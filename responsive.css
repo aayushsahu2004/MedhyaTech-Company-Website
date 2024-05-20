@@ -82,7 +82,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0vw 4vw;
+        padding: 0vw 2vw;
     }
 
     .head-text {
@@ -96,7 +96,7 @@
     }
 
     .head-text:nth-child(2) {
-        width: 24vw;
+        width: 30vw;
     }
 
     .head-text:nth-child(3) {
