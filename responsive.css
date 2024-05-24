@@ -69,8 +69,10 @@
     /* Show Notification */
 
     .notification {
+        width: 50vw;
+        text-align: center;
         top: 8vw;
-        padding: 2vw 1.4vw;
+        padding: 2vw 0vw;
         letter-spacing: 0.05vw;
     }
 
