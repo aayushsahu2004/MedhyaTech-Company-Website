@@ -96,7 +96,7 @@
     }
 
     .head-text:nth-child(2) {
-        width: 30vw;
+        width: 28vw;
     }
 
     .head-text:nth-child(3) {
@@ -305,7 +305,7 @@
 
 
     /* Page3 Colab Page Responsive code */
-    .page3 {
+    .collab-page {
         width: 100%;
         height: fit-content;
     }
@@ -316,13 +316,13 @@
         padding: 10vw 5vw;
     }
 
-    .page3 #left {
+    .collab-page #left {
         width: 100%;
         height: 45%;
         gap: 5vw;
     }
 
-    .page3 #right {
+    .collab-page #right {
         width: 100%;
         height: 40%;
         align-items: flex-start;
@@ -361,12 +361,12 @@
     }
 
     /* Page4 Services Page Responsive Code  */
-    #page4 {
+    .service-page {
         width: 100%;
         height: fit-content;
     }
 
-    #services-top {
+    .services-top {
         width: 100%;
         height: 30vw;
         display: flex;
@@ -378,7 +378,7 @@
         gap: 4vw;
     }
 
-    #services-top h1 {
+    .services-top h1 {
         font-size: 6vw;
         letter-spacing: 0.15vw;
     }
@@ -895,6 +895,27 @@
     .bottom-div .buttons{
         padding: 3vw 5vw !important;
     }
+
+    /* About Services Page */
+
+    #about-service-page{
+        height: fit-content !important;
+    }
+
+    .about-service{
+        height: 220vw !important;
+        flex-direction: column;
+        gap: 10vw;
+        margin-top: 15vw;
+    }
+
+    .about-service .serv-container{
+        width: 60% !important;
+    }
+
+    .about-service .serv-container h2{
+        margin: 5vw 0vw !important;
+    }
 }
 
 @media (max-width:540px) {
@@ -914,6 +935,10 @@
         height: 100%;
     }
 
+    #page6{
+        height: fit-content;
+    }
+
     #overlay #process-div {
         width: 100%;
         height: fit-content;
@@ -931,6 +956,14 @@
         height: fit-content;
         padding-bottom: 0vw;
     } 
+
+    .footer-page{
+        height: fit-content;
+    }
+    .footer-bottom{
+        margin-top: 10vw;
+    }
+
 }
 
 @media(min-width: 700px) and (max-width: 1024px) {
@@ -1019,7 +1052,7 @@
 
     /* Page3 Collab Page Responsive Code */
 
-    .page3 {
+    .collab-page {
         height: fit-content;
     }
 
@@ -1049,17 +1082,17 @@
 
     /* Page 4 Service Page All Code Start from Here  */
 
-    #page4 {
+    .service-page {
         height: fit-content;
         padding: 5vw 0vw;
     }
 
-    #services-top {
+    .services-top {
         margin-top: 5vw;
         margin-bottom: 8vw;
     }
 
-    #services-top,
+    .services-top,
     #services-top1,
     #services-top2 {
         padding: 0vw 3vw;
@@ -1127,17 +1160,18 @@
     .contact-us-bottom-container {
         width: 94%;
         position: absolute;
+        margin-top: 5vw;
     }
 
     /* Footer Page  */
 
     .footer-page {
-        height: 45vh;
+        height: 50vh;
     }
 
     .footer-page .footer {
         height: fit-content;
-        padding: 0vw 3vw;
+        padding: 5vw 3vw;
     }
 
     /* About Page  */
@@ -1225,7 +1259,27 @@
         padding: 3vw 5vw !important;
     }
 
+    /* about service page */
+
+    #about-service-page{
+        height: fit-content !important;
+    }
+
+    .about-service{
+        height: 150vw !important;
+        flex-direction: column;
+        gap: 10vw;
+    }
+
+    .about-service .serv-container{
+        width: 60% !important;
+    }
+
+    .about-service .serv-container .circle{
+        top: -8%;
+    }
 }
+
 
 @media(min-width: 700px) and (max-width: 912px) {
     #top-screen {

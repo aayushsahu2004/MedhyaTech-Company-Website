@@ -133,7 +133,7 @@
 #about-page4{
     width: 100%;
     height: 115vh;
-    background-image: url("https://images.unsplash.com/photo-1638184984605-af1f05249a56?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("./Images/Features-Page-bg-img.webp");
     background-size: cover;
     position: relative;
     padding: 0vw;
@@ -153,7 +153,7 @@
 
 
 #about-page4 .overlay{
-    background-color: #ffffffd3;
+    background-color: #ffffffb9;
     justify-content: center;
     padding-top: 8vw;
 }
@@ -222,3 +222,46 @@
 .about-page4-img:hover .bottom-div{
     transform: perspective(500px) rotateX(0deg);
 }
+
+
+#about-service-page{
+    height: 120vh;
+    background-image: url("./Images/why-choose-bg.webp");
+}
+
+.about-service{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+}
+
+.about-service .serv-container{
+    align-items: start;
+    width: 30%;
+    box-shadow: none;
+    border: 0.4vw solid #FF6928;
+    padding: 0vw 1vw;
+}
+
+.about-service .serv-container .circle{
+    left: 10%;
+}
+
+.about-service .serv-container h2{
+    margin: 2vw 0vw;
+    text-align: left;
+}
+
+.about-service .serv-container h2 span{
+    color: #FF6928;
+}
+
+.about-service .serv-container .page2-text{
+    width: 100%;
+}
+
+
+
