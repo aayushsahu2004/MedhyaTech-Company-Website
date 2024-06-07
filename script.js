@@ -629,6 +629,8 @@ document.getElementById("subscribe-form").addEventListener("submit", function (e
     email: document.querySelector(".email-address").value
   }
 
+  document.querySelector(".email-address").value = " "
+
   fetch('https://sendmailapi-6hc1.onrender.com/send-mail/subscribe-send-mail', {
     method: 'post',
     credentials: 'include', // Include credentials such as cookies
