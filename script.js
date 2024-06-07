@@ -563,98 +563,107 @@ if (window.location.pathname == "/" || window.location.pathname == "/index.html"
 //   }
 // }
 
-// async function sendmail(e) {
-//   e.preventDefault();
-//   // const email_id = document.querySelector(`.${email}`);
-//   const form = document.getElementById("subscribe-form")
-//   try {
-//     const passphrase = 'securePassphrase12345'; // Generated passphrase
-//     const key = await generateKey(passphrase);
+async function sendmail(e) {
+  e.preventDefault();
+  // const email_id = document.querySelector(`.${email}`);
+  const form = document.getElementById("subscribe-form")
+  try {
+    const passphrase = 'securePassphrase12345'; // Generated passphrase
+    const key = await generateKey(passphrase);
 
-//     // Encrypted values from the encryption step
-//     const encryptedServiceID = 'U6HM4WvScMefqrjRs0qSGC8r64OkeFWEf4KRKls2/w=='; // Example value, replace with actual encrypted service ID
-//     const encryptedTemplateID = 'VKHT527QYf3zrbeEpBXGEUWa5PXauRS1AyUWia1q5Ew='; // Example value, replace with actual encrypted template ID
-//     const encryptedUserID = 'V6LV9U/1Laib+86gkBLzOocJONVcE4D26tm7N3eLcoGa'; // Example value, replace with actual encrypted user ID
+    // Encrypted values from the encryption step
+    const encryptedServiceID = 'U6HM4WvScMefqrjRs0qSGC8r64OkeFWEf4KRKls2/w=='; // Example value, replace with actual encrypted service ID
+    const encryptedTemplateID = 'VKHT527QYf3zrbeEpBXGEUWa5PXauRS1AyUWia1q5Ew='; // Example value, replace with actual encrypted template ID
+    const encryptedUserID = 'V6LV9U/1Laib+86gkBLzOocJONVcE4D26tm7N3eLcoGa'; // Example value, replace with actual encrypted user ID
 
-//     const decryptedServiceID = await decryptData(encryptedServiceID, key);
-//     const decryptedTemplateID = await decryptData(encryptedTemplateID, key);
-//     const decryptedUserID = await decryptData(encryptedUserID, key);
+    const decryptedServiceID = await decryptData(encryptedServiceID, key);
+    const decryptedTemplateID = await decryptData(encryptedTemplateID, key);
+    const decryptedUserID = await decryptData(encryptedUserID, key);
 
-//     // Initialize EmailJS with the decrypted user ID
-//     emailjs.init(decryptedUserID);
+    // Initialize EmailJS with the decrypted user ID
+    emailjs.init(decryptedUserID);
 
-//     // Send email using EmailJS
-//     emailjs.sendForm(decryptedServiceID, decryptedTemplateID, form)
-//       .then(function (response) {
-//         var notification = document.querySelector(".notification");
+    // Send email using EmailJS
+    emailjs.sendForm(decryptedServiceID, decryptedTemplateID, form)
+      .then(function (response) {
+        var notification = document.querySelector(".notification");
 
-//         // Show success notification
-//         notification.innerText = "Subscribe successfully!";
-//         notification.style.display = "initial";
-//         notification.classList.add("animate__fadeIn");
+        // Show success notification
+        notification.innerText = "Subscribe successfully!";
+        notification.style.display = "initial";
+        notification.classList.add("animate__fadeIn");
 
-//         // Optionally, remove the notification after a certain duration
-//         setTimeout(function () {
-//           notification.classList.remove("animate__fadeIn");
-//           notification.classList.add("animate__fadeOut");
-//         }, 3000); // Remove after 3 seconds
+        // Optionally, remove the notification after a certain duration
+        setTimeout(function () {
+          notification.classList.remove("animate__fadeIn");
+          notification.classList.add("animate__fadeOut");
+        }, 3000); // Remove after 3 seconds
 
-//         // Optionally, reset the form after successful submission
-//         form.reset();
-//       })
-//       .catch(function (error) {
-//         console.error('Failed to send email:', error);
+        // Optionally, reset the form after successful submission
+        form.reset();
+      })
+      .catch(function (error) {
+        console.error('Failed to send email:', error);
 
-//         // Show error notification
-//         var notification = document.getElementById("notification");
-//         notification.innerText = "Failed to send email. Please try again later.";
-//         notification.classList.add("animate__fadeIn");
+        // Show error notification
+        var notification = document.getElementById("notification");
+        notification.innerText = "Failed to send email. Please try again later.";
+        notification.classList.add("animate__fadeIn");
 
-//         // Optionally, remove the notification after a certain duration
-//         setTimeout(function () {
-//           notification.classList.remove("animate__fadeIn");
-//           notification.classList.add("animate__fadeOut");
-//         }, 3000); // Remove after 3 seconds
-//       });
+        // Optionally, remove the notification after a certain duration
+        setTimeout(function () {
+          notification.classList.remove("animate__fadeIn");
+          notification.classList.add("animate__fadeOut");
+        }, 3000); // Remove after 3 seconds
+      });
 
-//     return false; // Prevent default form submission
-//   } catch (error) {
-//     console.error('An error occurred:', error);
-//   }
-// }
-
-document.getElementById("subscribe-form").addEventListener("submit", function (event) {
-  event.preventDefault();
-  const formData = {
-    email: document.querySelector(".email-address").value
+    return false; // Prevent default form submission
+  } catch (error) {
+    console.error('An error occurred:', error);
   }
+}
 
-  document.querySelector(".email-address").value = ""
+function sendMail() {
+  document.getElementById("subscribe-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const formData = {
+      email: document.querySelector(".email-address").value
+    }
 
-  fetch('https://sendmailapi-6hc1.onrender.com/send-mail/subscribe-send-mail', {
-    method: 'post',
-    credentials: 'include', // Include credentials such as cookies
-    headers: {
-      'Content-Type': 'application/json'
-      // Add any other headers as needed
-    },
-    body: JSON.stringify(formData)
-  })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
+    fetch('https://sendmailapi-6hc1.onrender.com/send-mail/subscribe-send-mail', {
+      method: 'post',
+      credentials: 'include', // Include credentials such as cookies
+      headers: {
+        'Content-Type': 'application/json'
+        // Add any other headers as needed
+      },
+      body: JSON.stringify(formData)
     })
-    .then(data => {
-      // Handle the response data
-      console.log(data);
-    })
-    .catch(error => {
-      // Handle errors
-      console.error('There was a problem with the fetch operation:', error);
-    });
-});
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        var notification = document.querySelector(".notification");
+
+        // Show success notification
+        notification.innerText = "Subscribe successfully!";
+        notification.style.display = "initial";
+        notification.classList.add("animate__fadeIn");
+
+        // Optionally, remove the notification after a certain duration
+        setTimeout(function () {
+          notification.classList.remove("animate__fadeIn");
+          notification.classList.add("animate__fadeOut");
+        }, 3000);
+        document.querySelector(".email-address").value = "";
+      })
+      .catch(error => {
+        // Handle errors
+        console.error('There was a problem with the fetch operation:', error);
+      });
+  });
+}
+sendMail();
 
 // if(window.location.pathname == "/MinTechBackup/about.html"){
 if (window.location.pathname == "/about.html") {
