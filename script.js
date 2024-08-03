@@ -125,7 +125,12 @@ function topscreen() {
       duration: 2
     })
 }
-topscreen()
+
+const currentPath = window.location.pathname;
+const excludePath = '/community.html';
+if (currentPath !== excludePath) {
+  topscreen();
+}
 
 // Locomotive for index page
 // if (window.location.pathname == "/MinTechBackup/" || window.location.pathname == "/MinTechBackup/index.html") {
@@ -396,7 +401,11 @@ function HiddenNavBar2() {
   updateNavPosition();
 }
 
-HiddenNavBar2();
+if (currentPath !== excludePath) {
+  HiddenNavBar2();
+}
+
+
 
 
 
@@ -438,7 +447,9 @@ function MenuAndBack() {
 
 
 }
-MenuAndBack();
+if (currentPath !== excludePath) {
+  MenuAndBack();
+}
 
 // if ((window.location.pathname == "/MinTechBackup/" || window.location.pathname == "/MinTechBackup/index.html")) {
 if (window.location.pathname == "/" || window.location.pathname == "/index.html" || window.location.pathname == "/about.html") {
@@ -663,7 +674,10 @@ function sendMail() {
       });
   });
 }
-sendMail();
+if (currentPath !== excludePath) {
+  sendMail();
+}
+
 
 // if(window.location.pathname == "/MinTechBackup/about.html"){
 if (window.location.pathname == "/about.html") {
@@ -708,18 +722,18 @@ if (window.location.pathname == "/about.html") {
 function handleRedirection() {
   // Get the current path name
   const currentPath = window.location.pathname;
-  
+
   // Define the path to redirect from and the target URL
-  const redirectFromPath = '/community';
+  const redirectFromPath = '/community.html';
   const redirectToUrl = 'https://community-app-dun.vercel.app/';
-  
+
   // Log current path for debugging
   console.log("Current path:", currentPath);
-  
+
   // Redirect if the current path matches the redirectFromPath
   if (currentPath === redirectFromPath) {
-      console.log("Redirecting...");
-      window.location.replace(redirectToUrl);
+    console.log("Redirecting...");
+    window.location.replace(redirectToUrl);
   }
 }
 
