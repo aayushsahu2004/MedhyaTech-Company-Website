@@ -704,3 +704,24 @@ if (window.location.pathname == "/about.html") {
   };
   aboutContainerScroller();
 }
+
+function handleRedirection() {
+  // Get the current path name
+  const currentPath = window.location.pathname;
+  
+  // Define the path to redirect from and the target URL
+  const redirectFromPath = '/community';
+  const redirectToUrl = 'https://community-app-dun.vercel.app/';
+  
+  // Log current path for debugging
+  console.log("Current path:", currentPath);
+  
+  // Redirect if the current path matches the redirectFromPath
+  if (currentPath === redirectFromPath) {
+      console.log("Redirecting...");
+      window.location.replace(redirectToUrl);
+  }
+}
+
+// Call the function when the page loads
+window.onload = handleRedirection();
