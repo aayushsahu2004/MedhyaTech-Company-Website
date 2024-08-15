@@ -71,11 +71,11 @@
     transition: all ease 0.2s;
     font-size: 1.2vw;
     font-family: mediumm;
-    border-bottom: 0.4vw solid #ff4d00;
+    border-bottom: 0.4vw solid #ff6600;
 }
 
 #button1{
-    background-color: #ff4d00;
+    background-color: #ff6600;
 }
 
 
@@ -176,7 +176,7 @@
 .top-div{
     width: 80%;
     height: 25%;
-    background-color: #ff4d00;
+    background-color: #ff6600;
     position: absolute;
     top: 63%;
     left: 10%;
