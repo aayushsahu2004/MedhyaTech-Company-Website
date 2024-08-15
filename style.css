@@ -306,7 +306,7 @@ html {
 }
 
 .text h1 span{
-    color: #ff6600;
+    color: #ff9900;
 }
 
 .text p{
@@ -355,7 +355,7 @@ html {
 }
 
 .menu a:hover{
-    color: #ff6600;
+    color: #ff9900;
 }
 
 
@@ -388,14 +388,14 @@ html {
 .separator .dot{
     width: 0.5vw;
     height: 0.5vw;
-    background-color: #ff6600;
+    background-color: #ff9900;
     border-radius: 50%;
 }
 
 .separator .line{
     width: 5vw;
     height: 0.2vw;
-    background-color: #ff6600;
+    background-color: #ff9900;
 }
 
 /* Each Page Main Heading and Paragraph */
@@ -407,7 +407,7 @@ html {
     text-transform: capitalize;
 }
 .main-heading span{
-    color: #ff6600;
+    color: #ff9900;
 }
 
 .paragraph{
@@ -423,20 +423,20 @@ html {
 .buttons{
     padding: 1vw 2.5vw;
     color: white;
-    background-color: #ff6600;
+    background-color: #ff9900;
     font-size: 1.2vw;
     letter-spacing: 0.08vw;
     font-family: mediumm;
     border-radius: 1vw;
     cursor: pointer;
-    border: 0.1vw solid #ff6600;
+    border: 0.1vw solid #ff9900;
     transition: all ease 0.3s;
 }
 
 .buttons:hover{
     background-color: white;
-    border: 0.1vw solid #ff6600;
-    color: #ff6600;
+    border: 0.1vw solid #ff9900;
+    color: #ff9900;
 }
 
 /* Page2 About Us us  */
@@ -719,7 +719,7 @@ html {
 }
 
 .serv-container:hover .circle{
-    background-color: #ff6600;
+    background-color: #ff9900;
 }
 
 .serv-container:hover .circle .c-img2{
@@ -904,7 +904,7 @@ html {
 .small-circle{
     width: 5.5vw;
     height: 5.5vw;
-    background-color: #ff6600;
+    background-color: #ff9900;
     border-radius: 50%;
     position: absolute;
     top: -5%;
@@ -925,7 +925,7 @@ html {
 }
 
 .proc-circle:hover .circle-inside{
-    border-color: #ff6600;
+    border-color: #ff9900;
 }
 
 .proc-circle:hover #second-inside-circle{
@@ -1063,7 +1063,7 @@ html {
 
 .details-item h2, h3{
     font-family: boldd;
-    color: #ff6600;
+    color: #ff9900;
     font-size: 3vw;
     letter-spacing: 0.08vw;
 }
@@ -1413,7 +1413,7 @@ html {
 }
 
 .footer-link:hover{
-    color: #ff6600;
+    color: #ff9900;
 }
 
 .footer-services{

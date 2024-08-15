@@ -71,11 +71,11 @@
     transition: all ease 0.2s;
     font-size: 1.2vw;
     font-family: mediumm;
-    border-bottom: 0.4vw solid #ff6600;
+    border-bottom: 0.4vw solid #ff9900;
 }
 
 #button1{
-    background-color: #ff6600;
+    background-color: #ff9900;
 }
 
 
@@ -176,7 +176,7 @@
 .top-div{
     width: 80%;
     height: 25%;
-    background-color: #ff6600;
+    background-color: #ff9900;
     position: absolute;
     top: 63%;
     left: 10%;
@@ -242,7 +242,7 @@
     align-items: start;
     width: 30%;
     box-shadow: none;
-    border: 0.4vw solid #FF6928;
+    border: 0.4vw solid #ff9900;
     padding: 0vw 1vw;
 }
 
@@ -256,7 +256,7 @@
 }
 
 .about-service .serv-container h2 span{
-    color: #FF6928;
+    color: #ff9900;
 }
 
 .about-service .serv-container .page2-text{

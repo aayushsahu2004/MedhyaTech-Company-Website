@@ -146,7 +146,7 @@
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        padding: 1vw 4vw;
+        padding: 1vw 1.8vw 1vw 4vw;
     }
 
     .navs a {
@@ -710,6 +710,10 @@
         height: 95%;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .footer .logo{
+        margin-bottom: 2vw;
     }
 
     .about-us {
