@@ -334,7 +334,7 @@ html {
     position: fixed;
     left: -100%;
     top: 12vw;
-    z-index: 99;
+    z-index: 99999;
     display: flex;
     flex-direction: column;
     justify-content: center;
