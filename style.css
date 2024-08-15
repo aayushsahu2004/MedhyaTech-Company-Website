@@ -184,8 +184,16 @@ html {
 }
 
 .logo{
-    width: 20vw;
+    width: 16vw;
     height: 4vw;
+}
+
+#top-screen .logo{
+    width: 20vw;
+}
+
+.footer .logo{
+    width: 20vw;
 }
 
 .logo img{
