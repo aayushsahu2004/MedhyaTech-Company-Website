@@ -28,7 +28,7 @@ function topscreen() {
       body();
     })
   if (window.location.pathname == "/") {
-    tl.from("#name h1", {
+    tl.from("#name .logo img", {
       opacity: 0,
       y: 100
     })
