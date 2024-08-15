@@ -6,7 +6,7 @@ viewBox="0 0 3386.66 1270"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
  <defs>
-  <font id="FontID0" horiz-adv-x="507" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+  <font id="FontID0" horiz-adv-x="507" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
 	<font-face 
 		font-family="Impact">
 		<font-face-src>
@@ -25,10 +25,10 @@ viewBox="0 0 3386.66 1270"
   </font>
   <style type="text/css">
    <![CDATA[
-    @font-face { font-family:"Impact";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    @font-face { font-family:"Impact";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
     .fil2 {fill:black}
-    .fil0 {fill:#33CC33}
-    .fil1 {fill:#FF6600}
+    .fil0 {fill:#128807}
+    .fil1 {fill:#FF9933}
     .fnt0 {font-weight:normal;font-size:430.99px;font-family:'Impact'}
    ]]>
   </style>
