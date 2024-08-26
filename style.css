@@ -97,7 +97,7 @@ html {
 .page1{
     width: 100%;
     min-height: 100vh;
-
+    padding: 0.1px;
 }
 
 
@@ -246,6 +246,15 @@ html {
     top: -10%;
 }
 
+.nav-bar-div{
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -270,6 +279,7 @@ html {
     width: 100%;
     height: calc(100vh - 8vw);
     position: relative;
+    margin-top: 8vw;
 }
 
 .container img{

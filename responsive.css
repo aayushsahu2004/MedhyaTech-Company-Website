@@ -65,6 +65,7 @@
 
     .container {
         height: 100%;
+        margin-top: 25vw;
     }
 
     /* Show Notification */
@@ -133,8 +134,7 @@
 
     /* Hidden Nav Bar */
     #nav3 {
-        position: fixed;
-        z-index: 999999;
+        display: none;
     }
 
     /* Nav-Bar 2 Responsive Code  */

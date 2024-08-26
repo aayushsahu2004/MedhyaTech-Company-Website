@@ -349,59 +349,88 @@ HiddenNavBar();
 // HiddenNavBar2();
 
 
-function HiddenNavBar2() {
-  let lastScrollTop = 0;
-  let animating = false;
+// function HiddenNavBar2() {
+//   let lastScrollTop = 0;
+//   let animating = false;
 
-  function updateNavPosition() {
-    if (animating) return; // Prevent new scroll interactions while animating
+//   function updateNavPosition() {
+//     if (animating) return; // Prevent new scroll interactions while animating
 
-    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (currentScrollTop > lastScrollTop || currentScrollTop < 0) {
-      // Scrolling down or at the top, show the navigation bar
-      animating = true;
-      gsap.to("#nav3", {
-        top: "0%",
-        duration: 0.5,
-        ease: Power4.easeNone,
-        onComplete: function () {
-          animating = false; // Reset animation flag after animation completes
-        }
-      });
-    } else {
-      // Scrolling up, hide the navigation bar
-      animating = true;
-      gsap.to("#nav3", {
-        top: "-10%",
-        duration: 0.5,
-        ease: Power4.easeNone,
-        onComplete: function () {
-          animating = false; // Reset animation flag after animation completes
-        }
-      });
+//     if (currentScrollTop > lastScrollTop || currentScrollTop < 0) {
+//       // Scrolling down or at the top, show the navigation bar
+//       animating = true;
+//       gsap.to("#nav3", {
+//         top: "0%",
+//         duration: 0.5,
+//         ease: Power4.easeNone,
+//         onComplete: function () {
+//           animating = false; // Reset animation flag after animation completes
+//         }
+//       });
+//     } else {
+//       // Scrolling up, hide the navigation bar
+//       animating = true;
+//       gsap.to("#nav3", {
+//         top: "-10%",
+//         duration: 0.5,
+//         ease: Power4.easeNone,
+//         onComplete: function () {
+//           animating = false; // Reset animation flag after animation completes
+//         }
+//       });
+//     }
+
+//     lastScrollTop = currentScrollTop;
+//   }
+
+//   let rafId;
+//   function throttleScroll() {
+//     cancelAnimationFrame(rafId);
+//     rafId = requestAnimationFrame(updateNavPosition);
+//   }
+
+//   document.addEventListener("scroll", throttleScroll);
+
+//   // Initial update
+//   updateNavPosition();
+// }
+
+// HiddenNavBar2();
+
+function navBarPhone() {
+  const header = document.querySelector('.nav-bar-div');
+
+  let lastScrollY = window.scrollY;
+  let isScrolledDown = false;
+
+  // Function to handle scroll events
+  function handleScroll() {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 10) {
+      // Scrolling down
+      if (!isScrolledDown) {
+        header.style.transform = `translateY(-13vw)`;
+        isScrolledDown = true;
+      }
+    } else if (currentScrollY < lastScrollY) {
+      // Scrolling up
+      if (isScrolledDown) {
+        header.style.transform = 'translateY(0)';
+        isScrolledDown = false;
+      }
     }
 
-    lastScrollTop = currentScrollTop;
+    // Update lastScrollY
+    lastScrollY = currentScrollY;
   }
 
-  let rafId;
-  function throttleScroll() {
-    cancelAnimationFrame(rafId);
-    rafId = requestAnimationFrame(updateNavPosition);
-  }
-
-  document.addEventListener("scroll", throttleScroll);
-
-  // Initial update
-  updateNavPosition();
+  // Attach event listeners
+  window.addEventListener('scroll', handleScroll);
 }
-
-HiddenNavBar2();
-
-
-
-
+navBarPhone();
 
 
 
@@ -414,9 +443,6 @@ function MenuAndBack() {
     if (event.target.classList.contains("menu-icon")) {
       if (flag == 0) {
         var menu = document.querySelector(".menu");
-        if (event.target.classList.contains("main-nav")) {
-          menu.style.top = "25.2vw";
-        }
         menu.style.left = "0%";
         document.querySelector('.body').style.overflowY = 'hidden';
         flag = 1;
