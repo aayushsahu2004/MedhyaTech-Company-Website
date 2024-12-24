@@ -1,7 +1,3 @@
-if (window.location.pathname == "/index.html") {
-  document.getElementById("top-screen").style.display = "none"
-}
-
 function HiddenNavBarNone() {
   document.querySelector("#nav3").style.opacity = "0"
 }
@@ -19,157 +15,41 @@ function body1() {
   document.querySelector('.body').style.overflowY = 'auto'
 }
 
-function topscreen() {
-  var tl = gsap.timeline()
-  tl
-
-    .add(function () {
-      HiddenNavBarNone();
-      body();
-    })
-  if (window.location.pathname == "/") {
-    tl.from("#name .logo img", {
-      opacity: 0,
-      y: 100
-    })
-      .from("#name p", {
-        opacity: 0,
-        onStart: function () {
-          $('#name p').textillate({ in: { effect: 'fadeInUpBig' } });
-        }
-      })
-      .from("#second-bottom", {
-        opacity: 0,
-        onStart: function () {
-          $('#second-bottom').textillate({
-            in: {
-              effect: 'fadeInUp',
-              callback: function () {
-                $('#second-bottom').textillate('out')
-              }
-            },
-            out: { effect: 'fadeOutUp' }
-          });
-
-        }
-      })
-      .from("#bottom", {
-        opacity: 0,
-        delay: 0.7,
-        duration: 0.7,
-        onStart: function () {
-          $('#bottom').textillate({
-            in: {
-              effect: 'fadeInUp',
-              callback: function () {
-                $('#bottom').textillate('out')
-              }
-            },
-            out: { effect: 'fadeOutUp' }
-          });
-
-        }
-      })
-      .from("#second-top", {
-        opacity: 0,
-        delay: 0.7,
-        duration: 0.7,
-        onStart: function () {
-          $('#second-top').textillate({
-            in: {
-              effect: 'fadeInUp',
-              callback: function () {
-                $('#second-top').textillate('out')
-              }
-            },
-            out: { effect: 'fadeOutUp' }
-          });
-
-        }
-      })
-      .from("#top", {
-        opacity: 0,
-        delay: 0.7,
-        duration: 0.7,
-        onStart: function () {
-          $('#top').textillate({
-            in: { effect: 'fadeInUp' }
-          });
-        }
-      })
-      .to("#top-screen", {
-        top: "-120%",
-        delay: 0.7,
-        duration: 1.2,
-        ease: "Power4.easeOut"
-      })
-      .from(".swiper-slide", {
-        opacity: 0
-      })
-  }
-  tl.from("#nav1", {
-    opacity: 0,
-    y: 20
-  })
-    .from("#nav2", {
-      opacity: 0,
-      y: 20
-    })
-    .add(function () {
-      HiddenNavBarInitial();
-      body1();
-    })
-    .from(".text", {
-      z: "-100",
-      opacity: 0,
-      duration: 2
-    })
-}
-
-topscreen();
-
-// Locomotive for index page
-// if (window.location.pathname == "/MinTechBackup/" || window.location.pathname == "/MinTechBackup/index.html") {
-// if (window.location.pathname == "/" || window.location.pathname == "/index.html") {
-//   function locomotive() {
-//     gsap.registerPlugin(ScrollTrigger);
-
-//     // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
-
-//     const locoScroll = new LocomotiveScroll({
-//       el: document.querySelector("#index-main"),
-//       smooth: true,
-//       smartphone: {
-//         smooth: true,
-//       },
-//       tablet: {
-//         smooth: true,
-//       }
-//     });
-//     // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
-//     locoScroll.on("scroll", ScrollTrigger.update);
-
-//     // tell ScrollTrigger to use these proxy methods for the "#index-main" element since Locomotive Scroll is hijacking things
-//     ScrollTrigger.scrollerProxy("#index-main", {
-//       scrollTop(value) {
-//         return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-//       }, // we don't have to define a scrollLeft because we're only scrolling vertically.
-//       getBoundingClientRect() {
-//         return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-//       },
-//       // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-//       pinType: document.querySelector("#index-main").style.transform ? "transform" : "fixed"
-//     });
-
-//     // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-//     ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-//     // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-//     ScrollTrigger.refresh();
-
+// function topscreen() {
+//   var tl = gsap.timeline()
+//   tl
+//     .from(".swiper-slide", {
+//       opacity: 0
+//     })
+//     .from("#nav1", {
+//       opacity: 0,
+//       y: 20
+//     })
+//     .from("#nav2", {
+//       opacity: 0,
+//       y: 20
+//     })
+//   if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+//     tl.from(".slider", {
+//       opacity: 0,
+//     })
 //   }
-//   locomotive()
+//   tl.add(function () {
+//     HiddenNavBarInitial();
+//     body1();
+//   })
+//   if (window.location.pathname == "/about.html") {
+//     tl.from(".about-container", {
+//       opacity: 0,
+//     })
+//   }
+//   tl.from(".text", {
+//     z: "-100",
+//     opacity: 0,
+//     duration: 2
+//   })
 // }
+// topscreen();
 
 if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
   function locomotive() {
@@ -307,97 +187,6 @@ function HiddenNavBar() {
   })
 }
 HiddenNavBar();
-
-
-// function HiddenNavBar2() {
-//   let lastScrollTop = 0;
-//   let animating = false;
-
-//   document.addEventListener("scroll", function() {
-//     if (animating) return; // Prevent new scroll interactions while animating
-
-//     let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-//     if (currentScrollTop > lastScrollTop) {
-//       // Scrolling down, show the navigation bar
-//       animating = true;
-//       gsap.to("#nav3", {
-//         top: "0%",
-//         duration: 0.5,
-//         ease: Power4.easeNone,
-//         onComplete: function() {
-//           animating = false; // Reset animation flag after animation completes
-//         }
-//       });
-//     } else {
-//       // Scrolling up, hide the navigation bar
-//       animating = true;
-//       gsap.to("#nav3", {
-//         top: "-10%",
-//         duration: 0.5,
-//         ease: Power4.easeNone,
-//         onComplete: function() {
-//           animating = false; // Reset animation flag after animation completes
-//         }
-//       });
-//     }
-
-//     lastScrollTop = currentScrollTop;
-//   });
-// }
-
-// HiddenNavBar2();
-
-
-// function HiddenNavBar2() {
-//   let lastScrollTop = 0;
-//   let animating = false;
-
-//   function updateNavPosition() {
-//     if (animating) return; // Prevent new scroll interactions while animating
-
-//     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-//     if (currentScrollTop > lastScrollTop || currentScrollTop < 0) {
-//       // Scrolling down or at the top, show the navigation bar
-//       animating = true;
-//       gsap.to("#nav3", {
-//         top: "0%",
-//         duration: 0.5,
-//         ease: Power4.easeNone,
-//         onComplete: function () {
-//           animating = false; // Reset animation flag after animation completes
-//         }
-//       });
-//     } else {
-//       // Scrolling up, hide the navigation bar
-//       animating = true;
-//       gsap.to("#nav3", {
-//         top: "-10%",
-//         duration: 0.5,
-//         ease: Power4.easeNone,
-//         onComplete: function () {
-//           animating = false; // Reset animation flag after animation completes
-//         }
-//       });
-//     }
-
-//     lastScrollTop = currentScrollTop;
-//   }
-
-//   let rafId;
-//   function throttleScroll() {
-//     cancelAnimationFrame(rafId);
-//     rafId = requestAnimationFrame(updateNavPosition);
-//   }
-
-//   document.addEventListener("scroll", throttleScroll);
-
-//   // Initial update
-//   updateNavPosition();
-// }
-
-// HiddenNavBar2();
 
 function navBarPhone() {
   const header = document.querySelector('.nav-bar-div');
@@ -550,47 +339,6 @@ if (window.location.pathname == "/" || window.location.pathname == "/index.html"
 
 }
 
-// async function decryptData(encryptedData, key) {
-//   try {
-//     const decodedData = Uint8Array.from(atob(encryptedData), c => c.charCodeAt(0));
-//     const decryptedData = await window.crypto.subtle.decrypt(
-//       { name: 'AES-GCM', iv: new Uint8Array(12) },
-//       key,
-//       decodedData.buffer
-//     );
-//     return new TextDecoder().decode(decryptedData);
-//   } catch (error) {
-//     console.error('Error decrypting data:', error);
-//     throw error; // Re-throw the error to be caught by the caller
-//   }
-// }
-
-// async function generateKey(passphrase) {
-//   try {
-//     const keyMaterial = await window.crypto.subtle.importKey(
-//       'raw',
-//       new TextEncoder().encode(passphrase),
-//       { name: 'PBKDF2' },
-//       false,
-//       ['deriveKey']
-//     );
-//     return window.crypto.subtle.deriveKey(
-//       {
-//         name: 'PBKDF2',
-//         salt: new Uint8Array(16),
-//         iterations: 100000,
-//         hash: 'SHA-256'
-//       },
-//       keyMaterial,
-//       { name: 'AES-GCM', length: 256 },
-//       false,
-//       ['encrypt', 'decrypt']
-//     );
-//   } catch (error) {
-//     console.error('Error generating key:', error);
-//     throw error; // Re-throw the error to be caught by the caller
-//   }
-// }
 
 async function sendmail(e) {
   e.preventDefault();
